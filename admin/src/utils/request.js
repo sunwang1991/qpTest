@@ -38,7 +38,7 @@ axios.defaults.headers = {
 // 创建axios实例
 const service = axios.create({
   // axios中请求配置有baseURL选项，表示请求URL公共部分
-  baseURL: import.meta.env.VITE_APP_BASE_API,
+  baseURL: import.meta.env.VITE_API_BASE_URL,
   // 超时
   timeout: 10_000,
 });
@@ -47,9 +47,9 @@ const service = axios.create({
 service.interceptors.request.use(
   config => {
     // 使用apifoxmock.com时开启
-    if (import.meta.env.DEV || url?.includes('apifoxmock.com')) {
-      config.headers['apifoxToken'] = '0KoMW8oFm5ruPw8HtaAlcQZP2YsZkbS1';
-    }
+    // if (import.meta.env.DEV || url?.includes('apifoxmock.com')) {
+    //   config.headers['apifoxToken'] = '0KoMW8oFm5ruPw8HtaAlcQZP2YsZkbS1';
+    // }
 
     // 是否需要设置 token
     const isToken = (config.headers || {}).isToken === false;

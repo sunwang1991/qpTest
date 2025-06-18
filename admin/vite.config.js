@@ -32,10 +32,10 @@ export default defineConfig(({ mode, command }) => {
       open: false, // 完成后自动跳转浏览器打开
       proxy: {
         // https://cn.vitejs.dev/config/#server-proxy
-        [env.VITE_APP_BASE_API]: {
-          target: 'http://192.168.17.18:6275',
+        [env.VITE_API_BASE_URL]: {
+          target: 'http://113.46.139.108/admin',
           changeOrigin: true,
-          rewrite: p => p.replace(env.VITE_APP_BASE_API, ''),
+          rewrite: p => p.replace(env.VITE_API_BASE_URL, ''),
         },
       },
     },
