@@ -5,5 +5,6 @@ export default {
   keys: '1750168450169_6128',
   koa: {
     port: 7001,
+    hostname: '0.0.0.0', // cors: true,
   },
 } as MidwayConfig;
