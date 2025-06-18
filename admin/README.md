@@ -1,15 +1,15 @@
-# 基于 Midwayjs 的管理系统后端接口服务
+# 基于 Vue3 + Element 的管理系统
 
-[![star](https://gitee.com/TsMask/mask_api_midwayjs/badge/star.svg?theme=dark)](https://gitee.com/TsMask/mask_api_midwayjs/stargazers)
-![Build Midwayjs](https://img.shields.io/badge/Build-Midway-green.svg)
-![Release V0.6.0](https://img.shields.io/badge/Release-V0.6.0-orange.svg)
+[![star](https://gitee.com/TsMask/mask_vue3_element/badge/star.svg?theme=dark)](https://gitee.com/TsMask/mask_vue3_element/stargazers)
+![Build Vite](https://img.shields.io/badge/Build-Vite-green.svg)
+![Build Vue3](https://img.shields.io/badge/Build-Vue3-green.svg)
+![Build MaskApi](https://img.shields.io/badge/Build-MaskApi-orange.svg)
+![Release V2.0.3](https://img.shields.io/badge/Release-V2.0.3-orange.svg)
 ![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## 介绍
+## 简介
 
-该项目选择 [RuoYi-Vue](https://gitee.com/y_project/RuoYi-Vue) 后端进行重构改造。
-
-基于 `Node` + `TypeScript` 的 `Midwayjs` 开发框架进行开发，如需进一步了解框架，参见 [Midwayjs](http://www.midwayjs.org) 官方文档。
+该前端项目选择 [RuoYi-Vue3](https://github.com/yangzongzhuan/RuoYi-Vue3) 进行改造调整。
 
 ## 项目文档
 
@@ -27,6 +27,32 @@
 - `Node-Midwayjs` 仓库地址 => [mask_api_midwayjs](https://gitee.com/TsMask/mask_api_midwayjs)
 - `Go-Gin` 仓库地址 => [mask_api_gin](https://gitee.com/TsMask/mask_api_gin)
 
+## 程序命令
+
+项目目录下 `.env.[环境]` 文件对应环境的一些配置，启动前请检查文件内是否配置正确。
+
+```bash
+# 使用阿里源可以加速下载依赖库
+npm install --registry https://registry.npmmirror.com
+```
+
+### 开发 development
+
+```bash
+# 检查配置参数 .env.development 和 vite.config.js
+npm install                 # 安装项目所需依赖
+npm run dev                 # 开发模式启动项目
+Local http://localhost:6265 # 启动成功后得到服务访问地址
+```
+
+### 部署 production
+
+```bash
+# 检查配置参数 .env.development
+npm install        # 安装项目所需依赖
+npm run build      # 构建生产项目代码
+```
+
 ## 内置功能
 
 1. 用户管理：用户是系统操作者，该功能主要完成系统用户配置。
@@ -41,100 +67,8 @@
 10. 登录日志：系统登录日志记录查询包含登录异常。
 11. 在线用户：当前系统中活跃用户状态监控。
 12. 调度任务：在线（添加、修改、删除）任务调度包含执行结果日志。
-13. 服务监控：监视当前系统CPU、内存、磁盘、堆栈等相关信息。
-14. 缓存监控：对系统的缓存信息查询，命令统计。
-
-## 项目结构
-
-```text
-mask_api_midwayjs
-├── assets                      目录-程序内部静态资源文件
-├── script                      目录-程序可用脚本
-├── src                         目录-源代码
-├   ├── config                  目录-程序相关运行参数配置
-├   ├── framework               目录-程序核心通用代码
-├   ├── modules                 目录-业务模块
-├   ├   ├── system              目录-系统内部接口模块
-├   ├   ├   ├── controller      目录-接口路由控制层
-├   ├   ├   ├── model           目录-数据对象模型层
-├   ├   ├   ├── repository      目录-CURD数据存储层
-├   ├   ├   ├── service         目录-业务逻辑服务层
-├   ├   └── ...
-├   ├── typings                 目录-程序通用类型定义
-├   ├── configuration.ts        文件-程序框架启动入口
-├   └── interface.ts            文件-程序通用接口函数自定义声明
-├── test                        目录-测试单元
-├── .editorconfig
-├── .eslintrc.json
-├── .gitignore
-├── .prettierrc.js
-├── bootstrap.js                文件-程序部署PM2启动运行入口
-├── jest.config.js
-├── LICENSE
-├── package.json                文件-程序依赖及启动命令信息
-├── README.en.md
-├── README.md
-└── tsconfig.json               文件-typescript配置
-```
-
-## 快速启动
-
-你需要先安装准备 **开发环境** 后使用 **程序命令**
-
-### 开发环境
-
-| 技术 | 说明 | 版本 |
-| ---- | ---- | ---- |
-| Nodejs | node项目的运行环境 | 18+ |
-| Redis | 缓存存储程序 | 6+ |
-| Mysql | 数据存储程序 | 8+ |
-
-程序可用脚本 `script` 目录内含初始化数据库SQL脚本文件
-
-### 程序命令
-
-#### 本地开发-Window/Liunx
-
-```bash
-# 修改配置参数 /src/connfig/config.local.ts
-npm install                 # 安装项目所需依赖
-npm run dev                 # 开发模式启动项目
-
-open http://localhost:6275  # 启动成功后得到服务访问地址
-```
-
-#### 生产部署-Liunx
-
-```bash
-# 修改配置参数 /src/connfig/config.prod.ts
-npm install             # 安装项目所需依赖
-npm run build           # 构建生产项目代码
-
-npm prune --omit=dev    # 清理开发依赖包，缩减生产环境体积大小（可选）
-npm install --omit=dev  # 重新安装生产依赖包（可选）
-
-npm run start           # 窗口当前启动项目
-npm run start:pm2       # PM2常驻启动项目（可选）
-```
-
-更多部署信息请移步 [Midway-启动和部署](http://www.midwayjs.org/docs/deployment)。
-
-#### 内置指令
-
-- 使用 `npm run lint` 来做代码风格检查。
-- 使用 `npm run lint:fix` 来做代码风格检查并修复格式。
-- 使用 `npm run ci` 来做代码盖率信息检查。
-- 使用 `npm run test` 来执行单元测试。
+13. 服务信息：监视当前系统CPU、内存、磁盘、堆栈等相关信息。
+14. 缓存信息：对系统的缓存信息查询，命令统计。
 
 > 有任何问题或者建议，可以在 [_Issues_](https://gitee.com/TsMask/mask_api_midwayjs/issues) 或通过QQ群：[_57242844_](https://jq.qq.com/?_wv=1027&k=z6Y4YQcB) 提出想法。  
 > 如果觉得项目对您有帮助，可以来个Star ⭐
-
-## 相关框架
-
-JAVA-**SpringBoot**
-
-| 名称 | 说明 | 地址 |
-| ---- | ---- | ---- |
-| RuoYi-Vue | 基于SpringBoot+Vue前后端分离的Java快速开发框架 | [Gitee仓库](https://gitee.com/y_project/RuoYi-Vue) |
-| RuoYi-Vue-Plus | RuoYi-Vue-Plus 是重写 RuoYi-Vue 针对 分布式集群 场景全方位升级(不兼容原框架) | [Gitee仓库](https://gitee.com/dromara/RuoYi-Vue-Plus) |
-| AgileBoot | 基于SpringBoot+Vue3前后端分离的Java快速开发脚手架 | [Gitee仓库](https://gitee.com/valarchie/AgileBoot-Back-End) |
