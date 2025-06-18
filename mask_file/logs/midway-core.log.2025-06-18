@@ -1,0 +1,10 @@
+2025-06-18 10:35:35.274 INFO 32352 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-18 10:35:35.281 INFO 32352 [midway:redis] client connect success
+2025-06-18 10:37:27.819 INFO 32352 [midway:static] starting static serve /static -> E:\兴元\尝试\qpChess\qpTest\mask_file\static
+2025-06-18 10:37:27.822 INFO 32352 [midway:static] starting static serve /upload -> E:\兴元\尝试\qpChess\qpTest\mask_file\upload
+2025-06-18 10:41:10.514 INFO 17268 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-18 10:41:10.524 INFO 17268 [midway:redis] client connect success
+2025-06-18 10:41:16.420 INFO 28984 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-18 10:41:16.427 INFO 28984 [midway:redis] client connect success
+2025-06-18 10:41:25.052 INFO 27576 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-18 10:41:25.058 INFO 27576 [midway:redis] client connect success

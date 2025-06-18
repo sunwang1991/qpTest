@@ -1,0 +1,15 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 7
+  },
+  "auditLog": "E:\\兴元\\尝试\\qpChess\\qpTest\\mask_file\\logs\\.audit\\.c2a7ca8d8a8a553561a1e230e6850bca00aa375f-audit.json",
+  "files": [
+    {
+      "date": 1750213200038,
+      "name": "E:\\兴元\\尝试\\qpChess\\qpTest\\mask_file\\logs\\midway-app.log.2025-06-18",
+      "hash": "98e6acc8a7a49e639de005cc5bb37138"
+    }
+  ],
+  "hashType": "md5"
+}

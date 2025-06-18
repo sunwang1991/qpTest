@@ -1,0 +1,15 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 7
+  },
+  "auditLog": "E:\\兴元\\尝试\\qpChess\\qpTest\\mask_file\\logs\\.audit\\.bd035c7c3c2d866ce148e9d27acc39efbbae4ef2-audit.json",
+  "files": [
+    {
+      "date": 1750213200035,
+      "name": "E:\\兴元\\尝试\\qpChess\\qpTest\\mask_file\\logs\\common-error.log.2025-06-18",
+      "hash": "67a26691ce33fb7ef3e88fc8e27720a9"
+    }
+  ],
+  "hashType": "md5"
+}
