@@ -3,6 +3,6 @@ import { Controller, Get, Redirect } from '@midwayjs/core';
 @Controller('/')
 export class HomeController {
   @Get('/')
-  @Redirect('/public/dist/index.html')
+  @Redirect('/public/index.html')
   async() {}
 }
