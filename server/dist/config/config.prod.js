@@ -20,7 +20,7 @@ exports.default = {
             default: {
                 host: '113.46.139.108',
                 port: 3306,
-                username: 'qpchess',
+                username: 'qpChess',
                 password: '123456',
                 database: 'qpchess',
             },

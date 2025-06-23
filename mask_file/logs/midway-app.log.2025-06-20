@@ -1,0 +1,46 @@
+2025-06-20 16:34:21.323 WARN 12048 当期服务环境运行配置 => local
+2025-06-20 16:43:54.725 INFO 12048 [-/::ffff:127.0.0.1/-/116ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 116ms
+2025-06-20 16:44:00.165 INFO 12048 [-/::ffff:127.0.0.1/-/382ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 382ms
+2025-06-20 16:44:00.207 INFO 12048 [-/::ffff:127.0.0.1/-/7ms GET /me] 
+访问接口: /me 
+总耗时: 7ms
+2025-06-20 16:44:00.214 INFO 12048 [-/::ffff:127.0.0.1/-/25ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 25ms
+2025-06-20 16:44:00.244 INFO 12048 [-/::ffff:127.0.0.1/-/25ms GET /router] 
+访问接口: /router 
+总耗时: 25ms
+2025-06-20 16:44:37.530 INFO 12048 [-/::ffff:127.0.0.1/-/4ms GET /me] 
+访问接口: /me 
+总耗时: 4ms
+2025-06-20 16:44:37.602 INFO 12048 [-/::ffff:127.0.0.1/-/8ms GET /router] 
+访问接口: /router 
+总耗时: 8ms
+2025-06-20 16:44:40.256 INFO 12048 [-/::ffff:127.0.0.1/-/7ms POST /auth/logout] 
+访问接口: /auth/logout 
+总耗时: 7ms
+2025-06-20 16:44:40.612 INFO 12048 [-/::ffff:127.0.0.1/-/5ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 5ms
+2025-06-20 16:44:46.170 INFO 12048 [-/::ffff:127.0.0.1/-/7ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 7ms
+2025-06-20 16:44:47.200 INFO 12048 [-/::ffff:127.0.0.1/-/8ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 8ms
+2025-06-20 16:46:47.799 INFO 12048 [-/::ffff:127.0.0.1/-/7ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 7ms
+2025-06-20 16:48:19.813 INFO 12048 [-/::ffff:127.0.0.1/-/16ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 15ms
+2025-06-20 16:48:27.314 INFO 12048 [-/::ffff:127.0.0.1/-/10ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 9ms
+2025-06-20 16:48:29.053 INFO 12048 [-/::ffff:127.0.0.1/-/8ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 8ms
