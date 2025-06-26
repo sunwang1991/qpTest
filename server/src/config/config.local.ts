@@ -19,8 +19,11 @@ export default {
     csrf: {
       // 允许调用的域名地址的，例如：http://192.168.56.101/mask-antd/
       refererWhiteList: [
-        'localhost:6265',
-        'servicewechat.com', // 微信小程序请求来源
+        'https://servicewechat.com', // 微信小程序域名
+        'https://mp.weixin.qq.com', // 微信公众平台
+        'http://localhost:6265', // 本地前端
+        'http://127.0.0.1:6275', // 本地API
+        'https://127.0.0.1:6275', // 本地API HTTPS
       ],
     },
   },
