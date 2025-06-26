@@ -30,7 +30,6 @@ export class UserController {
   /**用户登录 */
   @Post('/login')
   public async login(@Body() data: { code: string }): Promise<Resp> {
-    console.log(data);
     if (!data.code) return Resp.errMsg('code不能为空');
     const userInfo = await this.userService.login(data.code);
     return Resp.okData(userInfo);
