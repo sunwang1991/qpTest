@@ -1,0 +1,19 @@
+"use strict";
+// 系统菜单常量信息
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MENU_PATH_INLINE = exports.MENU_TYPE_AUTH = exports.MENU_TYPE_MENU = exports.MENU_TYPE_DIR = exports.MENU_COMPONENT_LAYOUT_LINK = exports.MENU_COMPONENT_LAYOUT_BLANK = exports.MENU_COMPONENT_LAYOUT_BASIC = void 0;
+/**组件布局类型-基础布局组件标识 */
+exports.MENU_COMPONENT_LAYOUT_BASIC = 'BasicLayout';
+/**组件布局类型-空白布局组件标识 */
+exports.MENU_COMPONENT_LAYOUT_BLANK = 'BlankLayout';
+/**组件布局类型-内链接布局组件标识 */
+exports.MENU_COMPONENT_LAYOUT_LINK = 'LinkLayout';
+/**菜单类型-目录 */
+exports.MENU_TYPE_DIR = 'D';
+/**菜单类型-菜单 */
+exports.MENU_TYPE_MENU = 'M';
+/**菜单类型-权限 */
+exports.MENU_TYPE_AUTH = 'A';
+/**菜单内嵌地址标识-带/前缀 */
+exports.MENU_PATH_INLINE = '/inline';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWVudS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9mcmFtZXdvcmsvY29uc3RhbnRzL21lbnUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLFdBQVc7OztBQUVYLHFCQUFxQjtBQUNSLFFBQUEsMkJBQTJCLEdBQUcsYUFBYSxDQUFDO0FBRXpELHFCQUFxQjtBQUNSLFFBQUEsMkJBQTJCLEdBQUcsYUFBYSxDQUFDO0FBRXpELHNCQUFzQjtBQUNULFFBQUEsMEJBQTBCLEdBQUcsWUFBWSxDQUFDO0FBRXZELGFBQWE7QUFDQSxRQUFBLGFBQWEsR0FBRyxHQUFHLENBQUM7QUFFakMsYUFBYTtBQUNBLFFBQUEsY0FBYyxHQUFHLEdBQUcsQ0FBQztBQUVsQyxhQUFhO0FBQ0EsUUFBQSxjQUFjLEdBQUcsR0FBRyxDQUFDO0FBRWxDLG1CQUFtQjtBQUNOLFFBQUEsZ0JBQWdCLEdBQUcsU0FBUyxDQUFDIn0=
