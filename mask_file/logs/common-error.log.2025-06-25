@@ -1,0 +1,75 @@
+2025-06-25 08:53:02.313 ERROR 10032 [midway:redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+  errno: -4078,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379
+}
+2025-06-25 15:18:44.615 ERROR 34220 [-/::ffff:127.0.0.1/-/40ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 15:21:33.576 ERROR 34220 [-/::ffff:127.0.0.1/-/8ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:29:46.943 ERROR 23912 [-/::ffff:127.0.0.1/-/26ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:31:17.133 ERROR 28528 [-/::ffff:127.0.0.1/-/45ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:33:47.865 ERROR 34808 [-/::ffff:127.0.0.1/-/43ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:35:35.313 ERROR 31848 [-/::ffff:127.0.0.1/-/46ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:46:38.258 ERROR 21892 [-/::ffff:127.0.0.1/-/43ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:47:38.135 ERROR 26088 [-/::ffff:127.0.0.1/-/49ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:49:26.092 ERROR 22996 [-/::ffff:127.0.0.1/-/42ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:53:57.080 ERROR 20112 [-/::ffff:127.0.0.1/-/49ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:54:58.860 ERROR 11232 [-/::ffff:127.0.0.1/-/105ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:56:35.274 ERROR 30312 [-/::ffff:127.0.0.1/-/38ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 17:01:39.383 ERROR 29012 [-/::ffff:127.0.0.1/-/16ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:02:09.047 ERROR 29012 [-/::ffff:127.0.0.1/-/11ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:02:16.412 ERROR 29012 [-/::ffff:127.0.0.1/-/8ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:02:38.126 ERROR 27052 [-/::ffff:127.0.0.1/-/168ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:04:07.046 ERROR 33292 [-/::ffff:127.0.0.1/-/66ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:04:26.522 ERROR 33292 [-/::ffff:127.0.0.1/-/17ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:05:09.382 ERROR 16788 [-/::ffff:127.0.0.1/-/103ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:05:15.587 ERROR 16788 [-/::ffff:127.0.0.1/-/14ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:05:21.927 ERROR 16788 [-/::ffff:127.0.0.1/-/13ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:05:32.350 ERROR 16788 [-/::ffff:127.0.0.1/-/10ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:14:52.589 ERROR 16140 [-/::ffff:127.0.0.1/-/40ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:18:17.238 ERROR 29556 [-/::ffff:127.0.0.1/-/638ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:18:57.124 ERROR 29556 [-/::ffff:127.0.0.1/-/223ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:19:56.529 ERROR 29556 [-/::ffff:127.0.0.1/-/23491ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:20:00.790 ERROR 29556 [-/::ffff:127.0.0.1/-/4246ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:20:00.865 ERROR 29556 [-/::ffff:127.0.0.1/-/4334ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:25:51.105 ERROR 18280 [-//-/311158ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:31:13.325 ERROR 21012 [-/::ffff:127.0.0.1/-/11769ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:32:08.155 ERROR 21012 [-//-/46557ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:33:02.137 ERROR 21012 [-/::ffff:127.0.0.1/-/50630ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:33:21.768 ERROR 21012 [-/::ffff:127.0.0.1/-/15796ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:34:28.140 ERROR 21012 [-/::ffff:127.0.0.1/-/40309ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:34:28.584 ERROR 21012 [-/::ffff:127.0.0.1/-/407ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:34:28.664 ERROR 21012 [-/::ffff:127.0.0.1/-/430ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:34:34.694 ERROR 21012 [-/::ffff:127.0.0.1/-/2988ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:38:11.275 ERROR 33956 [-/::ffff:127.0.0.1/-/36570ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'user_name' doesn't have a default value
+2025-06-25 17:38:11.668 ERROR 33956 [-/::ffff:127.0.0.1/-/356ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'user_name' doesn't have a default value
+2025-06-25 17:38:11.727 ERROR 33956 [-/::ffff:127.0.0.1/-/445ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'user_name' doesn't have a default value
+2025-06-25 17:38:15.326 ERROR 33956 [-/::ffff:127.0.0.1/-/268ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'user_name' doesn't have a default value
+2025-06-25 17:40:52.310 ERROR 32660 [-/::ffff:127.0.0.1/-/497ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'email' doesn't have a default value
+2025-06-25 17:45:19.725 ERROR 19064 [-/::ffff:127.0.0.1/-/484ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'email' doesn't have a default value
+2025-06-25 17:47:11.531 ERROR 32960 [-/::ffff:127.0.0.1/-/476ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'email' doesn't have a default value
+2025-06-25 17:48:14.792 ERROR 18828 [-/::ffff:127.0.0.1/-/446ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'email' doesn't have a default value
+2025-06-25 17:49:00.716 ERROR 24080 [-/::ffff:127.0.0.1/-/529ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'email' doesn't have a default value
+2025-06-25 17:50:24.934 ERROR 5256 [-/::ffff:127.0.0.1/-/498ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 17:54:02.510 ERROR 29168 [-/::ffff:127.0.0.1/-/589ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 17:54:55.084 ERROR 34052 [-/::ffff:127.0.0.1/-/565ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 17:55:31.637 ERROR 24444 [-/::ffff:127.0.0.1/-/547ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 17:56:06.238 ERROR 9872 [-/::ffff:127.0.0.1/-/436ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 17:57:57.765 ERROR 27700 [-/::ffff:127.0.0.1/-/371ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 21:44:34.160 ERROR 18368 [midway:redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+  errno: -4078,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379
+}
+2025-06-25 21:51:45.973 ERROR 24140 [-/::ffff:127.0.0.1/-/594ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 21:51:47.716 ERROR 24140 [-/::ffff:127.0.0.1/-/270ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 21:55:46.813 ERROR 31428 [-/::ffff:127.0.0.1/-/455ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 21:58:04.529 ERROR 29964 [-/::ffff:127.0.0.1/-/493ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 22:07:17.190 ERROR 12980 [-/::ffff:127.0.0.1/-/454ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'sex' doesn't have a default value
+2025-06-25 22:35:09.785 ERROR 34244 [-/::ffff:127.0.0.1/-/10ms POST /mini/user/update] [Recovery][0] panic recovered: /mini/user/update => QueryFailedError Unknown column 'userId' in 'where clause'
+2025-06-25 22:35:44.916 ERROR 32528 [-/::ffff:127.0.0.1/-/49ms POST /mini/user/update] [Recovery][0] panic recovered: /mini/user/update => QueryFailedError You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':id' at line 1

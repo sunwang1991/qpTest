@@ -15,6 +15,7 @@ import * as staticFile from '@midwayjs/static-file';
 import * as bull from '@midwayjs/bull';
 import * as crossDomain from '@midwayjs/cross-domain';
 import * as security from '@midwayjs/security';
+import * as swagger from '@midwayjs/swagger';
 
 import { checkDirPathExists } from './framework/utils/file/utils';
 import { ReportMiddleware } from './framework/middleware/report';
@@ -31,6 +32,10 @@ import { ErrorCatchFilters } from './framework/catch';
     typeorm, // 数据库ORM
     redis, // 缓存数据Redis
     bull, // 任务队列Bull
+    {
+      component: swagger,
+      enabledEnvironment: ['local'],
+    },
   ],
   importConfigs: [normalize(join(__dirname, './config'))],
 })

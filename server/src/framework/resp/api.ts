@@ -4,11 +4,11 @@ export class Resp {
   [key: string]: any;
 
   // 响应-code错误失败
-  static CODE_ERROR = 400001;
+  static CODE_ERROR = 500;
   // 响应-msg错误失败
   static MSG_ERROR = 'error';
   // 响应-msg正常成功
-  static CODE_SUCCESS = 200001;
+  static CODE_SUCCESS = 200;
   // 响应-code正常成功
   static MSG_SUCCESS = 'success';
 

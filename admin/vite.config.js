@@ -33,7 +33,7 @@ export default defineConfig(({ mode, command }) => {
       proxy: {
         // https://cn.vitejs.dev/config/#server-proxy
         [env.VITE_API_BASE_URL]: {
-          target: 'http://113.46.139.108/admin',
+          target: 'http://127.0.0.1:6275',
           changeOrigin: true,
           rewrite: p => p.replace(env.VITE_API_BASE_URL, ''),
         },

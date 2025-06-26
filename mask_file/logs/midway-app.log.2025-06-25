@@ -1,0 +1,163 @@
+2025-06-25 08:53:32.389 WARN 19592 当期服务环境运行配置 => local
+2025-06-25 09:16:06.615 WARN 26544 当期服务环境运行配置 => local
+2025-06-25 09:17:45.862 WARN 29388 当期服务环境运行配置 => local
+2025-06-25 10:56:12.090 WARN 30588 当期服务环境运行配置 => local
+2025-06-25 11:00:08.001 WARN 14540 当期服务环境运行配置 => local
+2025-06-25 11:01:07.150 WARN 29304 当期服务环境运行配置 => local
+2025-06-25 15:16:39.175 WARN 32856 当期服务环境运行配置 => local
+2025-06-25 15:18:14.116 WARN 34220 当期服务环境运行配置 => local
+2025-06-25 15:18:44.615 ERROR 34220 [-/::ffff:127.0.0.1/-/40ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 15:21:33.575 ERROR 34220 [-/::ffff:127.0.0.1/-/7ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 15:24:02.273 WARN 24152 当期服务环境运行配置 => local
+2025-06-25 16:29:23.351 WARN 23912 当期服务环境运行配置 => local
+2025-06-25 16:29:46.943 ERROR 23912 [-/::ffff:127.0.0.1/-/26ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:31:12.403 WARN 28528 当期服务环境运行配置 => local
+2025-06-25 16:31:17.132 ERROR 28528 [-/::ffff:127.0.0.1/-/44ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:33:44.169 WARN 34808 当期服务环境运行配置 => local
+2025-06-25 16:33:47.864 ERROR 34808 [-/::ffff:127.0.0.1/-/42ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:35:31.046 WARN 31848 当期服务环境运行配置 => local
+2025-06-25 16:35:35.312 ERROR 31848 [-/::ffff:127.0.0.1/-/45ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:45:48.891 WARN 12156 当期服务环境运行配置 => local
+2025-06-25 16:46:34.788 WARN 21892 当期服务环境运行配置 => local
+2025-06-25 16:46:38.257 ERROR 21892 [-/::ffff:127.0.0.1/-/42ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:47:27.422 WARN 26088 当期服务环境运行配置 => local
+2025-06-25 16:47:38.134 ERROR 26088 [-/::ffff:127.0.0.1/-/48ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:48:49.702 WARN 22996 当期服务环境运行配置 => local
+2025-06-25 16:49:26.091 ERROR 22996 [-/::ffff:127.0.0.1/-/41ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:53:52.008 WARN 20112 当期服务环境运行配置 => local
+2025-06-25 16:53:57.078 ERROR 20112 [-/::ffff:127.0.0.1/-/47ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:54:32.625 WARN 11232 当期服务环境运行配置 => local
+2025-06-25 16:54:58.859 ERROR 11232 [-/::ffff:127.0.0.1/-/104ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:56:31.307 WARN 30312 当期服务环境运行配置 => local
+2025-06-25 16:56:35.273 ERROR 30312 [-/::ffff:127.0.0.1/-/37ms POST /game/user/login] [Recovery][0] panic recovered: /game/user/login => CSRFError invalid csrf referer
+2025-06-25 16:58:26.216 WARN 8328 当期服务环境运行配置 => local
+2025-06-25 16:58:56.572 WARN 25760 当期服务环境运行配置 => local
+2025-06-25 16:59:31.822 WARN 9752 当期服务环境运行配置 => local
+2025-06-25 16:59:46.711 WARN 29012 当期服务环境运行配置 => local
+2025-06-25 17:01:39.381 ERROR 29012 [-/::ffff:127.0.0.1/-/15ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:02:09.047 ERROR 29012 [-/::ffff:127.0.0.1/-/11ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:02:16.412 ERROR 29012 [-/::ffff:127.0.0.1/-/8ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:02:34.185 WARN 27052 当期服务环境运行配置 => local
+2025-06-25 17:02:38.125 ERROR 27052 [-/::ffff:127.0.0.1/-/167ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:04:03.260 WARN 33292 当期服务环境运行配置 => local
+2025-06-25 17:04:07.045 ERROR 33292 [-/::ffff:127.0.0.1/-/65ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:04:26.521 ERROR 33292 [-/::ffff:127.0.0.1/-/16ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:04:52.045 WARN 16788 当期服务环境运行配置 => local
+2025-06-25 17:05:09.382 ERROR 16788 [-/::ffff:127.0.0.1/-/102ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:05:15.586 ERROR 16788 [-/::ffff:127.0.0.1/-/13ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:05:21.926 ERROR 16788 [-/::ffff:127.0.0.1/-/12ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:05:32.349 ERROR 16788 [-/::ffff:127.0.0.1/-/9ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:11:07.500 WARN 25076 当期服务环境运行配置 => local
+2025-06-25 17:13:04.163 WARN 16160 当期服务环境运行配置 => local
+2025-06-25 17:13:47.064 WARN 16140 当期服务环境运行配置 => local
+2025-06-25 17:14:52.588 ERROR 16140 [-/::ffff:127.0.0.1/-/39ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => MidwaySingletonInjectRequestError UserService with singleton scope can't implicitly inject HttpService with request scope directly, please add "@Scope(ScopeEnum.Request, { allowDowngrade: true })" in HttpService or use "ctx.requestContext.getAsync(HttpService)".
+2025-06-25 17:16:34.396 WARN 20012 当期服务环境运行配置 => local
+2025-06-25 17:18:14.472 WARN 29556 当期服务环境运行配置 => local
+2025-06-25 17:18:17.237 ERROR 29556 [-/::ffff:127.0.0.1/-/637ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:18:57.123 ERROR 29556 [-/::ffff:127.0.0.1/-/222ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:19:56.528 ERROR 29556 [-/::ffff:127.0.0.1/-/23490ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:20:00.789 ERROR 29556 [-/::ffff:127.0.0.1/-/4245ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:20:00.864 ERROR 29556 [-/::ffff:127.0.0.1/-/4333ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:20:30.876 WARN 18280 当期服务环境运行配置 => local
+2025-06-25 17:25:51.104 ERROR 18280 [-//-/311157ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:30:50.451 WARN 21012 当期服务环境运行配置 => local
+2025-06-25 17:31:13.324 ERROR 21012 [-/::ffff:127.0.0.1/-/11768ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:32:08.153 ERROR 21012 [-//-/46556ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:33:02.136 ERROR 21012 [-/::ffff:127.0.0.1/-/50629ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:33:21.767 ERROR 21012 [-/::ffff:127.0.0.1/-/15795ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:34:28.138 ERROR 21012 [-/::ffff:127.0.0.1/-/40306ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:34:28.583 ERROR 21012 [-/::ffff:127.0.0.1/-/406ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:34:28.664 ERROR 21012 [-/::ffff:127.0.0.1/-/429ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:34:34.693 ERROR 21012 [-/::ffff:127.0.0.1/-/2987ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Unknown column 'user.open_id' in 'field list'
+2025-06-25 17:37:29.759 WARN 33956 当期服务环境运行配置 => local
+2025-06-25 17:38:11.275 ERROR 33956 [-/::ffff:127.0.0.1/-/36569ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'user_name' doesn't have a default value
+2025-06-25 17:38:11.668 ERROR 33956 [-/::ffff:127.0.0.1/-/355ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'user_name' doesn't have a default value
+2025-06-25 17:38:11.726 ERROR 33956 [-/::ffff:127.0.0.1/-/444ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'user_name' doesn't have a default value
+2025-06-25 17:38:15.325 ERROR 33956 [-/::ffff:127.0.0.1/-/267ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'user_name' doesn't have a default value
+2025-06-25 17:39:49.190 WARN 17468 当期服务环境运行配置 => local
+2025-06-25 17:40:13.840 WARN 13968 当期服务环境运行配置 => local
+2025-06-25 17:40:48.849 WARN 32660 当期服务环境运行配置 => local
+2025-06-25 17:40:52.310 ERROR 32660 [-/::ffff:127.0.0.1/-/496ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'email' doesn't have a default value
+2025-06-25 17:42:26.911 WARN 12792 当期服务环境运行配置 => local
+2025-06-25 17:44:49.305 WARN 27556 当期服务环境运行配置 => local
+2025-06-25 17:45:15.240 WARN 19064 当期服务环境运行配置 => local
+2025-06-25 17:45:19.724 ERROR 19064 [-/::ffff:127.0.0.1/-/483ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'email' doesn't have a default value
+2025-06-25 17:47:08.963 WARN 32960 当期服务环境运行配置 => local
+2025-06-25 17:47:11.530 ERROR 32960 [-/::ffff:127.0.0.1/-/474ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'email' doesn't have a default value
+2025-06-25 17:48:12.044 WARN 18828 当期服务环境运行配置 => local
+2025-06-25 17:48:14.792 ERROR 18828 [-/::ffff:127.0.0.1/-/446ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'email' doesn't have a default value
+2025-06-25 17:48:55.408 WARN 24080 当期服务环境运行配置 => local
+2025-06-25 17:49:00.715 ERROR 24080 [-/::ffff:127.0.0.1/-/528ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'email' doesn't have a default value
+2025-06-25 17:49:50.820 WARN 27900 当期服务环境运行配置 => local
+2025-06-25 17:50:22.537 WARN 5256 当期服务环境运行配置 => local
+2025-06-25 17:50:24.933 ERROR 5256 [-/::ffff:127.0.0.1/-/497ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 17:53:39.747 WARN 18652 当期服务环境运行配置 => local
+2025-06-25 17:53:55.353 WARN 29168 当期服务环境运行配置 => local
+2025-06-25 17:54:02.510 ERROR 29168 [-/::ffff:127.0.0.1/-/589ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 17:54:34.853 WARN 33024 当期服务环境运行配置 => local
+2025-06-25 17:54:53.246 WARN 34052 当期服务环境运行配置 => local
+2025-06-25 17:54:55.083 ERROR 34052 [-/::ffff:127.0.0.1/-/563ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 17:55:29.908 WARN 24444 当期服务环境运行配置 => local
+2025-06-25 17:55:31.637 ERROR 24444 [-/::ffff:127.0.0.1/-/546ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 17:55:59.617 WARN 9872 当期服务环境运行配置 => local
+2025-06-25 17:56:06.236 ERROR 9872 [-/::ffff:127.0.0.1/-/434ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 17:56:28.959 WARN 26092 当期服务环境运行配置 => local
+2025-06-25 17:57:44.171 WARN 27700 当期服务环境运行配置 => local
+2025-06-25 17:57:57.765 ERROR 27700 [-/::ffff:127.0.0.1/-/371ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 17:58:52.614 WARN 17100 当期服务环境运行配置 => local
+2025-06-25 21:48:53.870 WARN 24140 当期服务环境运行配置 => local
+2025-06-25 21:51:45.972 ERROR 24140 [-/::ffff:127.0.0.1/-/593ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 21:51:47.716 ERROR 24140 [-/::ffff:127.0.0.1/-/270ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 21:53:14.912 WARN 9316 当期服务环境运行配置 => local
+2025-06-25 21:53:28.767 WARN 26340 当期服务环境运行配置 => local
+2025-06-25 21:53:57.626 WARN 11056 当期服务环境运行配置 => local
+2025-06-25 21:55:35.725 WARN 31428 当期服务环境运行配置 => local
+2025-06-25 21:55:46.813 ERROR 31428 [-/::ffff:127.0.0.1/-/454ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 21:58:00.685 WARN 29964 当期服务环境运行配置 => local
+2025-06-25 21:58:04.528 ERROR 29964 [-/::ffff:127.0.0.1/-/491ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'phone' doesn't have a default value
+2025-06-25 22:01:28.522 WARN 8980 当期服务环境运行配置 => local
+2025-06-25 22:06:40.131 WARN 12980 当期服务环境运行配置 => local
+2025-06-25 22:07:17.190 ERROR 12980 [-/::ffff:127.0.0.1/-/454ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => QueryFailedError Field 'sex' doesn't have a default value
+2025-06-25 22:09:31.461 INFO 12980 [-/::ffff:127.0.0.1/-/354ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 354ms
+2025-06-25 22:10:50.447 INFO 12980 [-/::ffff:127.0.0.1/-/296ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 295ms
+2025-06-25 22:11:42.104 WARN 11748 当期服务环境运行配置 => local
+2025-06-25 22:11:58.074 WARN 18744 当期服务环境运行配置 => local
+2025-06-25 22:12:00.688 INFO 18744 [-/::ffff:127.0.0.1/-/426ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 426ms
+2025-06-25 22:13:03.758 INFO 18744 [-/::ffff:127.0.0.1/-/526ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 526ms
+2025-06-25 22:16:13.316 WARN 2668 当期服务环境运行配置 => local
+2025-06-25 22:19:01.863 WARN 15040 当期服务环境运行配置 => local
+2025-06-25 22:19:21.895 WARN 6744 当期服务环境运行配置 => local
+2025-06-25 22:19:32.198 WARN 16488 当期服务环境运行配置 => local
+2025-06-25 22:25:30.291 WARN 26416 当期服务环境运行配置 => local
+2025-06-25 22:32:57.452 WARN 18204 当期服务环境运行配置 => local
+2025-06-25 22:33:17.227 WARN 34244 当期服务环境运行配置 => local
+2025-06-25 22:35:01.802 INFO 34244 [-/::ffff:127.0.0.1/-/434ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 434ms
+2025-06-25 22:35:08.756 INFO 34244 [-/::ffff:127.0.0.1/-/288ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 288ms
+2025-06-25 22:35:09.784 ERROR 34244 [-/::ffff:127.0.0.1/-/9ms POST /mini/user/update] [Recovery][0] panic recovered: /mini/user/update => QueryFailedError Unknown column 'userId' in 'where clause'
+2025-06-25 22:35:42.934 WARN 32528 当期服务环境运行配置 => local
+2025-06-25 22:35:44.916 ERROR 32528 [-/::ffff:127.0.0.1/-/49ms POST /mini/user/update] [Recovery][0] panic recovered: /mini/user/update => QueryFailedError You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':id' at line 1
+2025-06-25 22:38:14.480 WARN 25956 当期服务环境运行配置 => local
+2025-06-25 22:38:29.571 WARN 31100 当期服务环境运行配置 => local
+2025-06-25 22:39:15.351 INFO 31100 [-/::ffff:127.0.0.1/-/79ms POST /mini/user/update] 
+访问接口: /mini/user/update 
+总耗时: 78ms
+2025-06-25 22:40:52.910 WARN 15788 当期服务环境运行配置 => local
+2025-06-25 22:41:09.089 INFO 15788 [-/::ffff:127.0.0.1/-/65ms POST /mini/user/update] 
+访问接口: /mini/user/update 
+总耗时: 65ms
+2025-06-25 22:41:29.383 WARN 30660 当期服务环境运行配置 => local
+2025-06-25 22:41:29.468 INFO 30660 [-/::ffff:127.0.0.1/-/40ms POST /mini/user/update] 
+访问接口: /mini/user/update 
+总耗时: 40ms

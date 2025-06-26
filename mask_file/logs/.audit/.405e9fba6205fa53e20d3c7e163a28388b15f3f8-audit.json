@@ -1,0 +1,30 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 7
+  },
+  "auditLog": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\.audit\\.405e9fba6205fa53e20d3c7e163a28388b15f3f8-audit.json",
+  "files": [
+    {
+      "date": 1750649831425,
+      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-06-23",
+      "hash": "7606769ceb4300271b2cf45f10ff47b6"
+    },
+    {
+      "date": 1750746574390,
+      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-06-24",
+      "hash": "6140f6c6f8dbdc38d53f2b916c07e9eb"
+    },
+    {
+      "date": 1750812781929,
+      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-06-25",
+      "hash": "f72bdfbb6a0abff57133233b4b4182fa"
+    },
+    {
+      "date": 1750899736125,
+      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-06-26",
+      "hash": "daf3abf247bd2e70a02e6e533de56505"
+    }
+  ],
+  "hashType": "md5"
+}

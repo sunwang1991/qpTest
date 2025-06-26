@@ -1,0 +1,21 @@
+2025-06-23 11:57:32.722 INFO 5516 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-23 11:57:32.733 INFO 5516 [midway:redis] client connect success
+2025-06-23 14:58:42.769 INFO 4424 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-23 14:58:42.773 ERROR 4424 [midway:redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+  errno: -4078,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379
+}
+2025-06-23 14:59:11.487 INFO 18312 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-23 14:59:11.493 INFO 18312 [midway:redis] client connect success
+2025-06-23 15:00:37.001 INFO 18312 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-23 15:00:37.010 INFO 18312 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-06-23 15:49:30.995 INFO 26580 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-23 15:49:31.005 INFO 26580 [midway:redis] client connect success
+2025-06-23 16:41:08.740 INFO 23724 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-23 16:41:08.745 INFO 23724 [midway:redis] client connect success
+2025-06-23 16:41:28.653 INFO 23620 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-23 16:41:28.659 INFO 23620 [midway:redis] client connect success

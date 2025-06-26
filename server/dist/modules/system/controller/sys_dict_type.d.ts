@@ -24,7 +24,7 @@ export declare class SysDictTypeController {
     /**字典类型选择框列表 */
     options(): Promise<{
         code: number;
-        msg: string; /**字典类型列表 */
+        msg: string;
         data: {
             label: string;
             value: string;
@@ -32,7 +32,6 @@ export declare class SysDictTypeController {
     }>;
     /**字典类型列表导出 */
     export(query: Record<string, string>): Promise<{
-        /**字典类型信息 */
         code: number;
         msg: string;
     } | import("exceljs").Buffer>;

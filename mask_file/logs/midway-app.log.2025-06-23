@@ -1,0 +1,302 @@
+2025-06-23 11:57:32.825 WARN 5516 当期服务环境运行配置 => local
+2025-06-23 14:59:11.542 WARN 18312 当期服务环境运行配置 => local
+2025-06-23 15:01:09.872 INFO 18312 [-/::ffff:127.0.0.1/-/85ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 85ms
+2025-06-23 15:01:13.346 INFO 18312 [-/::ffff:127.0.0.1/-/104ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 104ms
+2025-06-23 15:01:13.389 INFO 18312 [-/::ffff:127.0.0.1/-/15ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 15ms
+2025-06-23 15:01:15.895 INFO 18312 [-/::ffff:127.0.0.1/-/174ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 174ms
+2025-06-23 15:01:15.917 INFO 18312 [-/::ffff:127.0.0.1/-/14ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 14ms
+2025-06-23 15:01:15.920 INFO 18312 [-/::ffff:127.0.0.1/-/7ms GET /me] 
+访问接口: /me 
+总耗时: 7ms
+2025-06-23 15:01:15.959 INFO 18312 [-/::ffff:127.0.0.1/-/25ms GET /router] 
+访问接口: /router 
+总耗时: 25ms
+2025-06-23 15:01:18.795 INFO 18312 [-/::ffff:127.0.0.1/-/2ms GET /me] 
+访问接口: /me 
+总耗时: 2ms
+2025-06-23 15:01:18.985 INFO 18312 [-/::ffff:127.0.0.1/-/15ms GET /router] 
+访问接口: /router 
+总耗时: 15ms
+2025-06-23 15:04:58.076 INFO 18312 [-/::ffff:127.0.0.1/-/101ms GET /monitor/system] 
+访问接口: /monitor/system 
+总耗时: 101ms
+2025-06-23 15:13:22.076 INFO 18312 [-/::ffff:127.0.0.1/-/12ms GET /monitor/cache] 
+访问接口: /monitor/cache 
+总耗时: 12ms
+2025-06-23 15:27:38.942 INFO 18312 [-/::ffff:127.0.0.1/-/15ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 15ms
+2025-06-23 15:27:42.255 INFO 18312 [-/::ffff:127.0.0.1/-/129ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 129ms
+2025-06-23 15:27:42.274 INFO 18312 [-/::ffff:127.0.0.1/-/11ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 11ms
+2025-06-23 15:27:53.995 INFO 18312 [-/::ffff:127.0.0.1/-/5ms GET /me] 
+访问接口: /me 
+总耗时: 5ms
+2025-06-23 15:27:54.092 INFO 18312 [-/::ffff:127.0.0.1/-/12ms GET /router] 
+访问接口: /router 
+总耗时: 12ms
+2025-06-23 15:27:56.977 INFO 18312 [-/::ffff:127.0.0.1/-/71ms GET /system/dept/tree] 
+访问接口: /system/dept/tree 
+总耗时: 71ms
+2025-06-23 15:27:57.012 INFO 18312 [-/::ffff:127.0.0.1/-/113ms GET /system/dict/data/type/sys_normal_disable] 
+访问接口: /system/dict/data/type/sys_normal_disable 
+总耗时: 113ms
+2025-06-23 15:27:57.014 INFO 18312 [-/::ffff:127.0.0.1/-/110ms GET /system/dict/data/type/sys_user_sex] 
+访问接口: /system/dict/data/type/sys_user_sex 
+总耗时: 110ms
+2025-06-23 15:27:57.040 INFO 18312 [-/::ffff:127.0.0.1/-/133ms GET /system/user/list?pageNum=1&pageSize=20&deptId=100] 
+访问接口: /system/user/list 
+总耗时: 133ms
+2025-06-23 15:28:09.874 INFO 18312 [-/::ffff:127.0.0.1/-/4ms GET /me] 
+访问接口: /me 
+总耗时: 4ms
+2025-06-23 15:28:09.918 INFO 18312 [-/::ffff:127.0.0.1/-/10ms GET /router] 
+访问接口: /router 
+总耗时: 10ms
+2025-06-23 15:28:10.508 INFO 18312 [-/::ffff:127.0.0.1/-/55ms GET /system/dict/data/type/sys_normal_disable] 
+访问接口: /system/dict/data/type/sys_normal_disable 
+总耗时: 55ms
+2025-06-23 15:28:10.509 INFO 18312 [-/::ffff:127.0.0.1/-/55ms GET /system/dict/data/type/sys_user_sex] 
+访问接口: /system/dict/data/type/sys_user_sex 
+总耗时: 55ms
+2025-06-23 15:28:10.516 INFO 18312 [-/::ffff:127.0.0.1/-/60ms GET /system/dept/tree] 
+访问接口: /system/dept/tree 
+总耗时: 60ms
+2025-06-23 15:28:10.532 INFO 18312 [-/::ffff:127.0.0.1/-/74ms GET /system/user/list?pageNum=1&pageSize=20&deptId=100] 
+访问接口: /system/user/list 
+总耗时: 74ms
+2025-06-23 15:28:12.543 INFO 18312 [-/::ffff:127.0.0.1/-/6ms GET /system/role/list?pageNum=1&pageSize=20] 
+访问接口: /system/role/list 
+总耗时: 6ms
+2025-06-23 15:28:15.300 INFO 18312 [-/::ffff:127.0.0.1/-/4ms GET /me] 
+访问接口: /me 
+总耗时: 4ms
+2025-06-23 15:28:15.348 INFO 18312 [-/::ffff:127.0.0.1/-/7ms GET /router] 
+访问接口: /router 
+总耗时: 7ms
+2025-06-23 15:28:15.809 INFO 18312 [-/::ffff:127.0.0.1/-/21ms GET /system/dict/data/type/sys_normal_disable] 
+访问接口: /system/dict/data/type/sys_normal_disable 
+总耗时: 21ms
+2025-06-23 15:28:15.826 INFO 18312 [-/::ffff:127.0.0.1/-/37ms GET /system/menu/list?] 
+访问接口: /system/menu/list 
+总耗时: 37ms
+2025-06-23 15:28:15.829 INFO 18312 [-/::ffff:127.0.0.1/-/43ms GET /system/dict/data/type/sys_show_hide] 
+访问接口: /system/dict/data/type/sys_show_hide 
+总耗时: 43ms
+2025-06-23 15:28:17.586 INFO 18312 [-/::ffff:127.0.0.1/-/21ms GET /system/dept/list?] 
+访问接口: /system/dept/list 
+总耗时: 21ms
+2025-06-23 15:28:18.738 INFO 18312 [-/::ffff:127.0.0.1/-/25ms GET /system/post/list?pageNum=1&pageSize=20] 
+访问接口: /system/post/list 
+总耗时: 25ms
+2025-06-23 15:28:19.782 INFO 18312 [-/::ffff:127.0.0.1/-/16ms GET /system/dict/type/list?pageNum=1&pageSize=20] 
+访问接口: /system/dict/type/list 
+总耗时: 16ms
+2025-06-23 15:28:20.783 INFO 18312 [-/::ffff:127.0.0.1/-/12ms GET /system/config/list?pageNum=1&pageSize=20] 
+访问接口: /system/config/list 
+总耗时: 12ms
+2025-06-23 15:28:20.785 INFO 18312 [-/::ffff:127.0.0.1/-/15ms GET /system/dict/data/type/sys_yes_no] 
+访问接口: /system/dict/data/type/sys_yes_no 
+总耗时: 14ms
+2025-06-23 15:28:21.683 INFO 18312 [-/::ffff:127.0.0.1/-/18ms GET /system/dict/data/type/sys_notice_status] 
+访问接口: /system/dict/data/type/sys_notice_status 
+总耗时: 18ms
+2025-06-23 15:28:21.684 INFO 18312 [-/::ffff:127.0.0.1/-/18ms GET /system/dict/data/type/sys_notice_type] 
+访问接口: /system/dict/data/type/sys_notice_type 
+总耗时: 18ms
+2025-06-23 15:28:21.706 INFO 18312 [-/::ffff:127.0.0.1/-/38ms GET /system/notice/list?pageNum=1&pageSize=20] 
+访问接口: /system/notice/list 
+总耗时: 38ms
+2025-06-23 15:28:23.604 INFO 18312 [-/::ffff:127.0.0.1/-/17ms GET /system/dict/data/type/sys_opera_type] 
+访问接口: /system/dict/data/type/sys_opera_type 
+总耗时: 17ms
+2025-06-23 15:28:23.606 INFO 18312 [-/::ffff:127.0.0.1/-/17ms GET /system/dict/data/type/sys_common_status] 
+访问接口: /system/dict/data/type/sys_common_status 
+总耗时: 17ms
+2025-06-23 15:28:23.629 INFO 18312 [-/::ffff:127.0.0.1/-/39ms GET /system/log/operate/list?pageNum=1&pageSize=20] 
+访问接口: /system/log/operate/list 
+总耗时: 39ms
+2025-06-23 15:28:24.856 INFO 18312 [-/::ffff:127.0.0.1/-/7ms GET /system/log/login/list?pageNum=1&pageSize=20] 
+访问接口: /system/log/login/list 
+总耗时: 7ms
+2025-06-23 15:28:30.005 INFO 18312 [-/::ffff:127.0.0.1/-/27ms GET /system/dict/data/type/sys_user_sex] 
+访问接口: /system/dict/data/type/sys_user_sex 
+总耗时: 27ms
+2025-06-23 15:28:30.008 INFO 18312 [-/::ffff:127.0.0.1/-/29ms GET /system/dept/tree] 
+访问接口: /system/dept/tree 
+总耗时: 29ms
+2025-06-23 15:28:30.025 INFO 18312 [-/::ffff:127.0.0.1/-/45ms GET /system/user/list?pageNum=1&pageSize=20&deptId=100] 
+访问接口: /system/user/list 
+总耗时: 45ms
+2025-06-23 15:29:06.971 INFO 18312 [-/::ffff:127.0.0.1/-/6ms GET /system/user/list?pageNum=1&pageSize=20&deptId=103] 
+访问接口: /system/user/list 
+总耗时: 6ms
+2025-06-23 15:29:07.884 INFO 18312 [-/::ffff:127.0.0.1/-/4ms GET /system/user/list?pageNum=1&pageSize=20&deptId=104] 
+访问接口: /system/user/list 
+总耗时: 4ms
+2025-06-23 15:29:08.702 INFO 18312 [-/::ffff:127.0.0.1/-/10ms GET /system/user/list?pageNum=1&pageSize=20&deptId=105] 
+访问接口: /system/user/list 
+总耗时: 10ms
+2025-06-23 15:29:09.094 INFO 18312 [-/::ffff:127.0.0.1/-/3ms GET /system/user/list?pageNum=1&pageSize=20&deptId=103] 
+访问接口: /system/user/list 
+总耗时: 3ms
+2025-06-23 15:29:13.708 INFO 18312 [-/::ffff:127.0.0.1/-/5ms GET /system/role/list?pageNum=1&pageSize=20] 
+访问接口: /system/role/list 
+总耗时: 5ms
+2025-06-23 15:29:15.960 INFO 18312 [-/::ffff:127.0.0.1/-/12ms GET /system/role/3] 
+访问接口: /system/role/3 
+总耗时: 12ms
+2025-06-23 15:29:15.976 INFO 18312 [-/::ffff:127.0.0.1/-/29ms GET /system/menu/tree/role/3] 
+访问接口: /system/menu/tree/role/3 
+总耗时: 29ms
+2025-06-23 15:29:33.297 INFO 18312 [-/::ffff:127.0.0.1/-/14ms GET /system/menu/list] 
+访问接口: /system/menu/list 
+总耗时: 14ms
+2025-06-23 15:29:33.299 INFO 18312 [-/::ffff:127.0.0.1/-/15ms GET /system/menu/1] 
+访问接口: /system/menu/1 
+总耗时: 15ms
+2025-06-23 15:29:40.536 INFO 18312 [-/::ffff:127.0.0.1/-/11ms GET /system/menu/1000] 
+访问接口: /system/menu/1000 
+总耗时: 11ms
+2025-06-23 15:29:40.540 INFO 18312 [-/::ffff:127.0.0.1/-/14ms GET /system/menu/list] 
+访问接口: /system/menu/list 
+总耗时: 14ms
+2025-06-23 15:29:51.692 INFO 18312 [-/::ffff:127.0.0.1/-/8ms GET /system/config/1] 
+访问接口: /system/config/1 
+总耗时: 8ms
+2025-06-23 15:30:17.984 INFO 18312 [-/::ffff:127.0.0.1/-/7ms GET /system/config/2] 
+访问接口: /system/config/2 
+总耗时: 7ms
+2025-06-23 15:30:32.728 INFO 18312 [-/::ffff:127.0.0.1/-/29ms PUT /system/config] 
+访问接口: /system/config 
+总耗时: 29ms
+2025-06-23 15:30:32.749 INFO 18312 [-/::ffff:127.0.0.1/-/5ms GET /system/config/list?pageNum=1&pageSize=20] 
+访问接口: /system/config/list 
+总耗时: 5ms
+2025-06-23 15:30:37.184 INFO 18312 [-/::ffff:127.0.0.1/-/6ms GET /system/config/3] 
+访问接口: /system/config/3 
+总耗时: 6ms
+2025-06-23 15:30:40.426 INFO 18312 [-/::ffff:127.0.0.1/-/7ms GET /system/config/2] 
+访问接口: /system/config/2 
+总耗时: 7ms
+2025-06-23 15:30:43.827 INFO 18312 [-/::ffff:127.0.0.1/-/6ms POST /auth/logout] 
+访问接口: /auth/logout 
+总耗时: 6ms
+2025-06-23 15:30:44.400 INFO 18312 [-/::ffff:127.0.0.1/-/5ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 5ms
+2025-06-23 15:30:46.845 INFO 18312 [-/::ffff:127.0.0.1/-/101ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 101ms
+2025-06-23 15:30:46.864 INFO 18312 [-/::ffff:127.0.0.1/-/3ms GET /me] 
+访问接口: /me 
+总耗时: 2ms
+2025-06-23 15:30:46.890 INFO 18312 [-/::ffff:127.0.0.1/-/5ms GET /router] 
+访问接口: /router 
+总耗时: 5ms
+2025-06-23 15:30:53.662 INFO 18312 [-/::ffff:127.0.0.1/-/9ms GET /system/dict/data/type/sys_yes_no] 
+访问接口: /system/dict/data/type/sys_yes_no 
+总耗时: 9ms
+2025-06-23 15:30:53.668 INFO 18312 [-/::ffff:127.0.0.1/-/14ms GET /system/config/list?pageNum=1&pageSize=20] 
+访问接口: /system/config/list 
+总耗时: 14ms
+2025-06-23 15:30:55.353 INFO 18312 [-/::ffff:127.0.0.1/-/18ms GET /system/config/2] 
+访问接口: /system/config/2 
+总耗时: 18ms
+2025-06-23 15:30:59.473 INFO 18312 [-/::ffff:127.0.0.1/-/53ms PUT /system/config] 
+访问接口: /system/config 
+总耗时: 53ms
+2025-06-23 15:30:59.499 INFO 18312 [-/::ffff:127.0.0.1/-/4ms GET /system/config/list?pageNum=1&pageSize=20] 
+访问接口: /system/config/list 
+总耗时: 4ms
+2025-06-23 15:31:03.487 INFO 18312 [-/::ffff:127.0.0.1/-/10ms GET /system/config/3] 
+访问接口: /system/config/3 
+总耗时: 10ms
+2025-06-23 15:31:10.185 INFO 18312 [-/::ffff:127.0.0.1/-/30ms PUT /system/config] 
+访问接口: /system/config 
+总耗时: 30ms
+2025-06-23 15:31:10.206 INFO 18312 [-/::ffff:127.0.0.1/-/7ms GET /system/config/list?pageNum=1&pageSize=20] 
+访问接口: /system/config/list 
+总耗时: 7ms
+2025-06-23 15:31:11.766 INFO 18312 [-/::ffff:127.0.0.1/-/6ms POST /auth/logout] 
+访问接口: /auth/logout 
+总耗时: 6ms
+2025-06-23 15:31:12.122 INFO 18312 [-/::ffff:127.0.0.1/-/13ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 13ms
+2025-06-23 15:31:13.929 INFO 18312 [-/::ffff:127.0.0.1/-/9ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 9ms
+2025-06-23 15:31:14.798 INFO 18312 [-/::ffff:127.0.0.1/-/7ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 7ms
+2025-06-23 15:31:20.470 INFO 18312 [-/::ffff:127.0.0.1/-/98ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 98ms
+2025-06-23 15:31:20.488 INFO 18312 [-/::ffff:127.0.0.1/-/7ms GET /me] 
+访问接口: /me 
+总耗时: 7ms
+2025-06-23 15:31:20.489 INFO 18312 [-/::ffff:127.0.0.1/-/12ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 12ms
+2025-06-23 15:31:20.500 INFO 18312 [-/::ffff:127.0.0.1/-/4ms GET /router] 
+访问接口: /router 
+总耗时: 4ms
+2025-06-23 15:31:33.419 INFO 18312 [-/::ffff:127.0.0.1/-/10ms GET /system/dict/data/type/sys_yes_no] 
+访问接口: /system/dict/data/type/sys_yes_no 
+总耗时: 9ms
+2025-06-23 15:31:33.424 INFO 18312 [-/::ffff:127.0.0.1/-/13ms GET /system/config/list?pageNum=1&pageSize=20] 
+访问接口: /system/config/list 
+总耗时: 13ms
+2025-06-23 15:31:38.287 INFO 18312 [-/::ffff:127.0.0.1/-/9ms GET /system/config/4] 
+访问接口: /system/config/4 
+总耗时: 9ms
+2025-06-23 15:31:41.733 INFO 18312 [-/::ffff:127.0.0.1/-/21ms PUT /system/config] 
+访问接口: /system/config 
+总耗时: 21ms
+2025-06-23 15:31:41.753 INFO 18312 [-/::ffff:127.0.0.1/-/4ms GET /system/config/list?pageNum=1&pageSize=20] 
+访问接口: /system/config/list 
+总耗时: 4ms
+2025-06-23 15:31:49.167 INFO 18312 [-/::ffff:127.0.0.1/-/4ms POST /auth/logout] 
+访问接口: /auth/logout 
+总耗时: 4ms
+2025-06-23 15:31:49.544 INFO 18312 [-/::ffff:127.0.0.1/-/7ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 7ms
+2025-06-23 15:31:51.832 INFO 18312 [-/::ffff:127.0.0.1/-/7ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 7ms
+2025-06-23 15:31:57.027 INFO 18312 [-/::ffff:127.0.0.1/-/4ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 4ms
+2025-06-23 15:31:58.958 INFO 18312 [-/::ffff:127.0.0.1/-/3ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 3ms
+2025-06-23 15:31:59.904 INFO 18312 [-/::ffff:127.0.0.1/-/4ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 3ms
+2025-06-23 15:32:02.575 INFO 18312 [-/::ffff:127.0.0.1/-/13ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 13ms
+2025-06-23 15:32:07.932 INFO 18312 [-/::ffff:127.0.0.1/-/3ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 3ms
+2025-06-23 15:32:27.669 INFO 18312 [-/::ffff:127.0.0.1/-/12ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 12ms
+2025-06-23 15:32:30.397 INFO 18312 [-/::ffff:127.0.0.1/-/3ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 3ms

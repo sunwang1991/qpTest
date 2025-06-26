@@ -18,7 +18,10 @@ export default {
   security: {
     csrf: {
       // 允许调用的域名地址的，例如：http://192.168.56.101/mask-antd/
-      refererWhiteList: ['localhost:6265', '192.168.56.102'],
+      refererWhiteList: [
+        'localhost:6265',
+        'servicewechat.com', // 微信小程序请求来源
+      ],
     },
   },
 
@@ -32,6 +35,7 @@ export default {
         username: 'root',
         password: '123456',
         database: 'qpchess',
+        synchronize: false, // 如果第一次使用，不关闭它，会自动创建数据库表
         logging: true, // 输出sql日志
       },
     },
