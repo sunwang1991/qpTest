@@ -1,0 +1,4 @@
+2025-06-27 08:45:33.015 ERROR 21316 [-/::ffff:127.0.0.1/-/41ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => CSRFError invalid csrf referer
+2025-06-27 08:46:15.808 ERROR 21316 [-/::ffff:127.0.0.1/-/13ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => CSRFError invalid csrf referer
+2025-06-27 08:48:23.620 ERROR 34580 [-/::ffff:127.0.0.1/-/23ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => CSRFError invalid csrf referer
+2025-06-27 08:49:13.283 ERROR 6052 [-/::ffff:127.0.0.1/-/26ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => CSRFError invalid csrf referer

@@ -6,6 +6,8 @@ import { Resp } from '../../../framework/resp/api';
 export declare class RoomController {
     /**房间服务 */
     private roomService;
+    /**交易服务 */
+    private transactionService;
     /**创建房间 */
     create(data: {
         creator: number;
@@ -46,5 +48,14 @@ export declare class RoomController {
     joinRoom(data: {
         roomId: number;
         userId: number;
+    }): Promise<Resp>;
+    /**
+     * 用户支付给房间内另一用户
+     */
+    payToUser(data: {
+        roomId: number;
+        payUserId: number;
+        receiveUserId: number;
+        amount: number;
     }): Promise<Resp>;
 }

@@ -137,10 +137,9 @@ export default (): MidwayConfig => {
         enable: true,
         type: 'referer',
         refererWhiteList: [
-          'https://servicewechat.com', // 微信小程序域名
-          'https://mp.weixin.qq.com', // 微信公众平台
-          'http://127.0.0.1:6275', // 本地开发
-          'https://127.0.0.1:6275', // 本地开发HTTPS
+          'servicewechat.com', // 微信小程序域名
+          'mp.weixin.qq.com', // 微信公众平台
+          '127.0.0.1:6275', // 本地开发
         ],
       },
       xframe: {

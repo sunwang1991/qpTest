@@ -1,6 +1,7 @@
 import { Body, Controller, Inject, Post } from '@midwayjs/core';
 import { Resp } from '../../../framework/resp/api';
 import { RoomService } from '../service/room';
+import { TransactionService } from '../service/transaction';
 
 /**
  * 房间信息
@@ -11,6 +12,10 @@ export class RoomController {
   /**房间服务 */
   @Inject()
   private roomService: RoomService;
+
+  /**交易服务 */
+  @Inject()
+  private transactionService: TransactionService;
 
   /**创建房间 */
   @Post('/create')
@@ -68,10 +73,27 @@ export class RoomController {
 
       const room = await this.roomService.getUserActiveRoom(data.userId);
       if (!room) return Resp.errMsg('用户没有进行中的房间');
+
+      // 获取房间用户信息
       const users = await this.roomService.getRoomUsers(room.id);
+
+      // 获取用户交易统计
+      const userStats = await this.transactionService.getRoomUserStats(room.id);
+
+      // 合并用户信息和交易统计
+      const usersWithStats = users.map((user: any) => {
+        const userStat = userStats.find(stat => stat.userId === user.id);
+        return {
+          ...user,
+          totalPay: userStat ? userStat.totalPay : 0,
+          totalReceive: userStat ? userStat.totalReceive : 0,
+          netAmount: userStat ? userStat.netAmount : 0,
+        };
+      });
+
       let roomInfo = {
         ...room,
-        users,
+        users: usersWithStats,
       };
       return Resp.okData(roomInfo);
     } catch (error) {
@@ -175,6 +197,43 @@ export class RoomController {
       }
     } catch (error) {
       return Resp.errMsg(error.message || '加入房间失败');
+    }
+  }
+
+  /**
+   * 用户支付给房间内另一用户
+   */
+  @Post('/pay')
+  public async payToUser(
+    @Body()
+    data: {
+      roomId: number;
+      payUserId: number;
+      receiveUserId: number;
+      amount: number;
+    }
+  ): Promise<Resp> {
+    try {
+      if (!data.roomId) return Resp.errMsg('房间ID不能为空');
+      if (!data.payUserId) return Resp.errMsg('支付用户ID不能为空');
+      if (!data.receiveUserId) return Resp.errMsg('收款用户ID不能为空');
+      if (!data.amount || data.amount <= 0)
+        return Resp.errMsg('支付金额必须大于0');
+
+      const success = await this.transactionService.payToUser(
+        data.roomId,
+        data.payUserId,
+        data.receiveUserId,
+        data.amount
+      );
+
+      if (success) {
+        return Resp.okMsg('支付成功');
+      } else {
+        return Resp.errMsg('支付失败');
+      }
+    } catch (error) {
+      return Resp.errMsg(error.message || '支付失败');
     }
   }
 }

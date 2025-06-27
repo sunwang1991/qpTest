@@ -11,7 +11,7 @@ export default {
   security: {
     csrf: {
       // 允许调用的域名地址的，例如：http://<Referer>/mask-api
-      refererWhiteList: ['https://servicewechat.com'],
+      refererWhiteList: ['servicewechat.com'],
     },
   },
 
