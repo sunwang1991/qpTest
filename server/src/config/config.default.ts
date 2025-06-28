@@ -140,6 +140,8 @@ export default (): MidwayConfig => {
           'servicewechat.com', // 微信小程序域名
           'mp.weixin.qq.com', // 微信公众平台
           '127.0.0.1:6275', // 本地开发
+          'https://www.sunwang.top:6275',
+          'https://sunwang.top:6275',
         ],
       },
       xframe: {

@@ -4,14 +4,20 @@ export default {
   // 核心服务配置
   koa: {
     port: 6275, // 服务端口
-    proxy: true, // 如果部署在反向代理中需要开启此配置，不是就关闭，以防被恶意用户伪造请求 IP 等信息。
+    key: '/www/server/panel/vhost/cert/servers/privkey.pem', // SSL私钥路径
+    cert: '/www/server/panel/vhost/cert/servers/fullchain.pem', // SSL证书路径
+    proxy: false, // 直接HTTPS访问，不需要代理
   },
 
   // 安全
   security: {
     csrf: {
       // 允许调用的域名地址的，例如：http://<Referer>/mask-api
-      refererWhiteList: ['servicewechat.com'],
+      refererWhiteList: [
+        'servicewechat.com',
+        'https://www.sunwang.top:6275',
+        'https://sunwang.top:6275',
+      ],
     },
   },
 
