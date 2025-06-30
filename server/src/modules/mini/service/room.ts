@@ -101,10 +101,6 @@ export class RoomService {
       throw new Error('房间不存在');
     }
 
-    if (room.creatorId !== userId) {
-      throw new Error('只有房间创建者可以结束房间');
-    }
-
     if (room.statusFlag === '2') {
       throw new Error('房间已经结束');
     }

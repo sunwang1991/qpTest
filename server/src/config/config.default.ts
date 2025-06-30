@@ -283,7 +283,5 @@ export default (): MidwayConfig => {
       /**算数值最大值，默认9 */
       mathMax: 15,
     },
-
-    //
   };
 };

@@ -1,0 +1,775 @@
+2025-06-28 16:24:44.764 WARN 3788 当期服务环境运行配置 => local
+2025-06-28 16:25:53.426 INFO 3788 [-/::1/-/48ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 47ms
+2025-06-28 16:26:18.475 INFO 3788 [-/::1/-/20ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 20ms
+2025-06-28 16:27:29.008 WARN 38800 当期服务环境运行配置 => local
+2025-06-28 16:27:57.012 INFO 38800 [-/::1/-/115ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 115ms
+2025-06-28 16:28:01.804 INFO 38800 [-/::1/-/474ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 474ms
+2025-06-28 16:28:01.850 INFO 38800 [-/::1/-/36ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 36ms
+2025-06-28 16:28:01.854 INFO 38800 [-/::1/-/11ms GET /me] 
+访问接口: /me 
+总耗时: 11ms
+2025-06-28 16:28:01.913 INFO 38800 [-/::1/-/42ms GET /router] 
+访问接口: /router 
+总耗时: 42ms
+2025-06-28 16:28:36.474 INFO 38800 [-/::1/-/220ms GET /system/dict/data/type/sys_normal_disable] 
+访问接口: /system/dict/data/type/sys_normal_disable 
+总耗时: 220ms
+2025-06-28 16:28:36.536 INFO 38800 [-/::1/-/278ms GET /system/dept/tree] 
+访问接口: /system/dept/tree 
+总耗时: 278ms
+2025-06-28 16:28:36.547 INFO 38800 [-/::1/-/291ms GET /system/dict/data/type/sys_user_sex] 
+访问接口: /system/dict/data/type/sys_user_sex 
+总耗时: 291ms
+2025-06-28 16:28:36.790 INFO 38800 [-/::1/-/529ms GET /system/user/list?pageNum=1&pageSize=20&deptId=100] 
+访问接口: /system/user/list 
+总耗时: 529ms
+2025-06-28 16:28:37.866 INFO 38800 [-/::1/-/79ms GET /system/role/list?pageNum=1&pageSize=20] 
+访问接口: /system/role/list 
+总耗时: 78ms
+2025-06-28 16:47:15.834 WARN 4132 当期服务环境运行配置 => local
+2025-06-28 16:47:54.133 WARN 24048 当期服务环境运行配置 => local
+2025-06-28 16:48:35.781 WARN 14616 当期服务环境运行配置 => local
+2025-06-28 16:49:34.748 WARN 10808 当期服务环境运行配置 => local
+2025-06-28 16:51:45.517 INFO 10808 [-/::ffff:127.0.0.1/-/499ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 499ms
+2025-06-28 16:51:45.805 INFO 10808 [-/::ffff:127.0.0.1/-/251ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 251ms
+2025-06-28 16:51:46.368 INFO 10808 [-/::ffff:127.0.0.1/-/204ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 204ms
+2025-06-28 16:51:48.406 INFO 10808 [-/::ffff:127.0.0.1/-/242ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 242ms
+2025-06-28 16:51:49.736 INFO 10808 [-/::ffff:127.0.0.1/-/943ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 943ms
+2025-06-28 16:51:50.393 INFO 10808 [-/::ffff:127.0.0.1/-/236ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 236ms
+2025-06-28 16:51:52.377 INFO 10808 [-/::ffff:127.0.0.1/-/217ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 217ms
+2025-06-28 16:51:54.368 INFO 10808 [-/::ffff:127.0.0.1/-/215ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 215ms
+2025-06-28 16:51:56.344 INFO 10808 [-/::ffff:127.0.0.1/-/202ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 202ms
+2025-06-28 16:51:58.386 INFO 10808 [-/::ffff:127.0.0.1/-/220ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 220ms
+2025-06-28 16:52:00.364 INFO 10808 [-/::ffff:127.0.0.1/-/205ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 205ms
+2025-06-28 16:52:02.368 INFO 10808 [-/::ffff:127.0.0.1/-/209ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 209ms
+2025-06-28 16:52:04.349 INFO 10808 [-/::ffff:127.0.0.1/-/207ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 206ms
+2025-06-28 16:52:06.346 INFO 10808 [-/::ffff:127.0.0.1/-/195ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 195ms
+2025-06-28 16:52:08.341 INFO 10808 [-/::ffff:127.0.0.1/-/189ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 189ms
+2025-06-28 16:52:10.362 INFO 10808 [-/::ffff:127.0.0.1/-/210ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 210ms
+2025-06-28 16:52:12.357 INFO 10808 [-/::ffff:127.0.0.1/-/201ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 201ms
+2025-06-28 16:52:14.357 INFO 10808 [-/::ffff:127.0.0.1/-/202ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 202ms
+2025-06-28 16:52:16.347 INFO 10808 [-/::ffff:127.0.0.1/-/187ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 187ms
+2025-06-28 16:52:18.343 INFO 10808 [-/::ffff:127.0.0.1/-/195ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 195ms
+2025-06-28 16:52:20.333 INFO 10808 [-/::ffff:127.0.0.1/-/187ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 187ms
+2025-06-28 16:52:22.350 INFO 10808 [-/::ffff:127.0.0.1/-/192ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 192ms
+2025-06-28 16:52:24.345 INFO 10808 [-/::ffff:127.0.0.1/-/187ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 187ms
+2025-06-28 16:52:26.370 INFO 10808 [-/::ffff:127.0.0.1/-/189ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 189ms
+2025-06-28 16:52:28.372 INFO 10808 [-/::ffff:127.0.0.1/-/200ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 200ms
+2025-06-28 16:52:30.363 INFO 10808 [-/::ffff:127.0.0.1/-/201ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 201ms
+2025-06-28 16:52:32.356 INFO 10808 [-/::ffff:127.0.0.1/-/194ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 193ms
+2025-06-28 16:52:34.347 INFO 10808 [-/::ffff:127.0.0.1/-/193ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 193ms
+2025-06-28 16:52:36.388 INFO 10808 [-/::ffff:127.0.0.1/-/243ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 243ms
+2025-06-28 16:52:38.359 INFO 10808 [-/::ffff:127.0.0.1/-/201ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 201ms
+2025-06-28 16:52:40.347 INFO 10808 [-/::ffff:127.0.0.1/-/191ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 191ms
+2025-06-28 16:52:42.337 INFO 10808 [-/::ffff:127.0.0.1/-/187ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 187ms
+2025-06-28 16:52:44.355 INFO 10808 [-/::ffff:127.0.0.1/-/194ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 194ms
+2025-06-28 16:52:46.417 INFO 10808 [-/::ffff:127.0.0.1/-/252ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 252ms
+2025-06-28 16:52:48.360 INFO 10808 [-/::ffff:127.0.0.1/-/203ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 203ms
+2025-06-28 16:52:50.363 INFO 10808 [-/::ffff:127.0.0.1/-/201ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 200ms
+2025-06-28 16:52:52.394 INFO 10808 [-/::ffff:127.0.0.1/-/236ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 236ms
+2025-06-28 16:52:54.344 INFO 10808 [-/::ffff:127.0.0.1/-/190ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 190ms
+2025-06-28 16:52:56.355 INFO 10808 [-/::ffff:127.0.0.1/-/196ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 195ms
+2025-06-28 16:52:58.407 INFO 10808 [-/::ffff:127.0.0.1/-/249ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 249ms
+2025-06-28 16:53:00.350 INFO 10808 [-/::ffff:127.0.0.1/-/194ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 194ms
+2025-06-28 16:53:02.353 INFO 10808 [-/::ffff:127.0.0.1/-/196ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 196ms
+2025-06-28 16:53:04.368 INFO 10808 [-/::ffff:127.0.0.1/-/197ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 197ms
+2025-06-28 16:53:06.332 INFO 10808 [-/::ffff:127.0.0.1/-/184ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 184ms
+2025-06-28 16:53:08.368 INFO 10808 [-/::ffff:127.0.0.1/-/203ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 203ms
+2025-06-28 16:53:10.343 INFO 10808 [-/::ffff:127.0.0.1/-/196ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 196ms
+2025-06-28 16:53:12.417 INFO 10808 [-/::ffff:127.0.0.1/-/195ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 195ms
+2025-06-28 16:53:14.358 INFO 10808 [-/::ffff:127.0.0.1/-/204ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 204ms
+2025-06-28 16:53:16.346 INFO 10808 [-/::ffff:127.0.0.1/-/187ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 187ms
+2025-06-28 16:53:18.381 INFO 10808 [-/::ffff:127.0.0.1/-/215ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 215ms
+2025-06-28 16:53:20.340 INFO 10808 [-/::ffff:127.0.0.1/-/190ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 189ms
+2025-06-28 16:53:22.404 INFO 10808 [-/::ffff:127.0.0.1/-/182ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 182ms
+2025-06-28 16:53:28.635 WARN 27004 当期服务环境运行配置 => local
+2025-06-28 16:53:30.464 INFO 27004 [-/::ffff:127.0.0.1/-/290ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 289ms
+2025-06-28 16:53:38.521 INFO 27004 [-/::ffff:127.0.0.1/-/183ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 183ms
+2025-06-28 16:53:38.576 INFO 27004 [-/::ffff:127.0.0.1/-/222ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 222ms
+2025-06-28 16:53:38.610 INFO 27004 [-/::ffff:127.0.0.1/-/252ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 252ms
+2025-06-28 16:53:38.703 INFO 27004 [-/::ffff:127.0.0.1/-/275ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 275ms
+2025-06-28 16:53:45.839 INFO 27004 [-/::ffff:127.0.0.1/-/144ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 144ms
+2025-06-28 16:53:45.844 INFO 27004 [-/::ffff:127.0.0.1/-/168ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 168ms
+2025-06-28 16:53:45.855 INFO 27004 [-/::ffff:127.0.0.1/-/169ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 169ms
+2025-06-28 16:53:46.315 INFO 27004 [-/::ffff:127.0.0.1/-/158ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 158ms
+2025-06-28 16:53:48.321 INFO 27004 [-/::ffff:127.0.0.1/-/171ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 171ms
+2025-06-28 16:53:50.321 INFO 27004 [-/::ffff:127.0.0.1/-/158ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 158ms
+2025-06-28 16:53:52.334 INFO 27004 [-/::ffff:127.0.0.1/-/169ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 169ms
+2025-06-28 16:53:54.312 INFO 27004 [-/::ffff:127.0.0.1/-/158ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 158ms
+2025-06-28 16:53:56.324 INFO 27004 [-/::ffff:127.0.0.1/-/173ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 172ms
+2025-06-28 16:53:58.311 INFO 27004 [-/::ffff:127.0.0.1/-/152ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 152ms
+2025-06-28 16:54:00.318 INFO 27004 [-/::ffff:127.0.0.1/-/165ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 165ms
+2025-06-28 16:54:02.321 INFO 27004 [-/::ffff:127.0.0.1/-/171ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 171ms
+2025-06-28 16:54:04.294 INFO 27004 [-/::ffff:127.0.0.1/-/148ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 148ms
+2025-06-28 16:54:06.324 INFO 27004 [-/::ffff:127.0.0.1/-/162ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 162ms
+2025-06-28 16:54:08.353 INFO 27004 [-/::ffff:127.0.0.1/-/159ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 159ms
+2025-06-28 16:54:10.331 INFO 27004 [-/::ffff:127.0.0.1/-/168ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 168ms
+2025-06-28 16:54:12.331 INFO 27004 [-/::ffff:127.0.0.1/-/180ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 180ms
+2025-06-28 16:54:14.307 INFO 27004 [-/::ffff:127.0.0.1/-/157ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 157ms
+2025-06-28 16:54:16.391 INFO 27004 [-/::ffff:127.0.0.1/-/221ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 221ms
+2025-06-28 16:54:18.351 INFO 27004 [-/::ffff:127.0.0.1/-/190ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 189ms
+2025-06-28 16:54:20.328 INFO 27004 [-/::ffff:127.0.0.1/-/155ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 155ms
+2025-06-28 16:54:22.305 INFO 27004 [-/::ffff:127.0.0.1/-/152ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 152ms
+2025-06-28 16:54:24.328 INFO 27004 [-/::ffff:127.0.0.1/-/167ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 167ms
+2025-06-28 16:54:26.294 INFO 27004 [-/::ffff:127.0.0.1/-/145ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 145ms
+2025-06-28 16:54:28.311 INFO 27004 [-/::ffff:127.0.0.1/-/163ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 163ms
+2025-06-28 16:54:30.311 INFO 27004 [-/::ffff:127.0.0.1/-/158ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 158ms
+2025-06-28 16:54:32.318 INFO 27004 [-/::ffff:127.0.0.1/-/162ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 162ms
+2025-06-28 16:54:34.307 INFO 27004 [-/::ffff:127.0.0.1/-/158ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 158ms
+2025-06-28 16:54:36.349 INFO 27004 [-/::ffff:127.0.0.1/-/200ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 199ms
+2025-06-28 16:54:38.380 INFO 27004 [-/::ffff:127.0.0.1/-/236ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 236ms
+2025-06-28 16:54:40.311 INFO 27004 [-/::ffff:127.0.0.1/-/158ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 158ms
+2025-06-28 16:54:42.297 INFO 27004 [-/::ffff:127.0.0.1/-/154ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 154ms
+2025-06-28 16:54:44.297 INFO 27004 [-/::ffff:127.0.0.1/-/153ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 153ms
+2025-06-28 16:54:46.323 INFO 27004 [-/::ffff:127.0.0.1/-/162ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 162ms
+2025-06-28 16:54:48.320 INFO 27004 [-/::ffff:127.0.0.1/-/162ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 162ms
+2025-06-28 16:54:50.293 INFO 27004 [-/::ffff:127.0.0.1/-/154ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 154ms
+2025-06-28 16:54:52.315 INFO 27004 [-/::ffff:127.0.0.1/-/163ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 163ms
+2025-06-28 16:54:54.296 INFO 27004 [-/::ffff:127.0.0.1/-/159ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 159ms
+2025-06-28 16:54:56.319 INFO 27004 [-/::ffff:127.0.0.1/-/165ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 165ms
+2025-06-28 16:54:58.303 INFO 27004 [-/::ffff:127.0.0.1/-/152ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 152ms
+2025-06-28 16:55:00.251 INFO 27004 [-/::ffff:127.0.0.1/-/97ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 96ms
+2025-06-28 16:55:05.484 WARN 32452 当期服务环境运行配置 => local
+2025-06-28 16:55:06.384 INFO 32452 [-/::ffff:127.0.0.1/-/233ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 232ms
+2025-06-28 16:55:06.800 INFO 32452 [-/::ffff:127.0.0.1/-/1045ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 1045ms
+2025-06-28 16:55:08.340 INFO 32452 [-/::ffff:127.0.0.1/-/206ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 206ms
+2025-06-28 16:55:10.353 INFO 32452 [-/::ffff:127.0.0.1/-/190ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 190ms
+2025-06-28 16:55:12.428 INFO 32452 [-/::ffff:127.0.0.1/-/274ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 274ms
+2025-06-28 16:55:14.438 INFO 32452 [-/::ffff:127.0.0.1/-/291ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 291ms
+2025-06-28 16:55:18.496 INFO 32452 [-/::ffff:127.0.0.1/-/309ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 309ms
+2025-06-28 16:55:18.713 INFO 32452 [-/::ffff:127.0.0.1/-/183ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 183ms
+2025-06-28 16:55:19.225 INFO 32452 [-/::ffff:127.0.0.1/-/188ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 188ms
+2025-06-28 16:55:21.207 INFO 32452 [-/::ffff:127.0.0.1/-/189ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 189ms
+2025-06-28 16:55:23.215 INFO 32452 [-/::ffff:127.0.0.1/-/185ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 185ms
+2025-06-28 16:55:25.219 INFO 32452 [-/::ffff:127.0.0.1/-/193ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 193ms
+2025-06-28 16:55:27.234 INFO 32452 [-/::ffff:127.0.0.1/-/188ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 188ms
+2025-06-28 16:55:29.289 INFO 32452 [-/::ffff:127.0.0.1/-/187ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 187ms
+2025-06-28 16:55:31.231 INFO 32452 [-/::ffff:127.0.0.1/-/193ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 193ms
+2025-06-28 16:55:33.221 INFO 32452 [-/::ffff:127.0.0.1/-/188ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 188ms
+2025-06-28 16:55:35.220 INFO 32452 [-/::ffff:127.0.0.1/-/189ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 189ms
+2025-06-28 16:55:37.241 INFO 32452 [-/::ffff:127.0.0.1/-/200ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 200ms
+2025-06-28 16:55:39.208 INFO 32452 [-/::ffff:127.0.0.1/-/183ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 183ms
+2025-06-28 16:55:41.236 INFO 32452 [-/::ffff:127.0.0.1/-/201ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 201ms
+2025-06-28 16:55:43.215 INFO 32452 [-/::ffff:127.0.0.1/-/184ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 184ms
+2025-06-28 16:55:45.210 INFO 32452 [-/::ffff:127.0.0.1/-/184ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 184ms
+2025-06-28 16:55:47.201 INFO 32452 [-/::ffff:127.0.0.1/-/180ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 180ms
+2025-06-28 16:55:49.205 INFO 32452 [-/::ffff:127.0.0.1/-/183ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 183ms
+2025-06-28 16:55:51.202 INFO 32452 [-/::ffff:127.0.0.1/-/178ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 178ms
+2025-06-28 16:55:53.208 INFO 32452 [-/::ffff:127.0.0.1/-/186ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 186ms
+2025-06-28 16:55:55.222 INFO 32452 [-/::ffff:127.0.0.1/-/179ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 179ms
+2025-06-28 16:55:57.216 INFO 32452 [-/::ffff:127.0.0.1/-/187ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 187ms
+2025-06-28 16:55:59.332 INFO 32452 [-/::ffff:127.0.0.1/-/214ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 214ms
+2025-06-28 16:56:02.439 INFO 32452 [-/::ffff:127.0.0.1/-/302ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 302ms
+2025-06-28 16:56:02.644 INFO 32452 [-/::ffff:127.0.0.1/-/185ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 185ms
+2025-06-28 16:56:03.167 INFO 32452 [-/::ffff:127.0.0.1/-/180ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 180ms
+2025-06-28 16:56:05.240 INFO 32452 [-/::ffff:127.0.0.1/-/803ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 803ms
+2025-06-28 16:56:05.291 INFO 32452 [-/::ffff:127.0.0.1/-/228ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 228ms
+2025-06-28 16:56:07.181 INFO 32452 [-/::ffff:127.0.0.1/-/196ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 196ms
+2025-06-28 16:56:09.199 INFO 32452 [-/::ffff:127.0.0.1/-/197ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 197ms
+2025-06-28 16:56:11.185 INFO 32452 [-/::ffff:127.0.0.1/-/187ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 187ms
+2025-06-28 16:56:13.180 INFO 32452 [-/::ffff:127.0.0.1/-/186ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 186ms
+2025-06-28 16:56:15.183 INFO 32452 [-/::ffff:127.0.0.1/-/193ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 193ms
+2025-06-28 16:56:17.195 INFO 32452 [-/::ffff:127.0.0.1/-/197ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 197ms
+2025-06-28 16:56:19.192 INFO 32452 [-/::ffff:127.0.0.1/-/183ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 183ms
+2025-06-28 16:56:21.183 INFO 32452 [-/::ffff:127.0.0.1/-/191ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 191ms
+2025-06-28 16:56:47.100 WARN 39044 当期服务环境运行配置 => local
+2025-06-28 16:56:51.650 INFO 39044 [-/::ffff:127.0.0.1/-/522ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 522ms
+2025-06-28 16:56:51.883 INFO 39044 [-/::ffff:127.0.0.1/-/189ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 189ms
+2025-06-28 16:56:52.390 INFO 39044 [-/::ffff:127.0.0.1/-/156ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 156ms
+2025-06-28 16:56:54.447 INFO 39044 [-/::ffff:127.0.0.1/-/215ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 215ms
+2025-06-28 16:56:54.627 INFO 39044 [-/::ffff:127.0.0.1/-/818ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 817ms
+2025-06-28 16:56:56.386 INFO 39044 [-/::ffff:127.0.0.1/-/160ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 160ms
+2025-06-28 16:56:58.393 INFO 39044 [-/::ffff:127.0.0.1/-/159ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 159ms
+2025-06-28 16:57:00.436 INFO 39044 [-/::ffff:127.0.0.1/-/204ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 203ms
+2025-06-28 16:57:02.408 INFO 39044 [-/::ffff:127.0.0.1/-/172ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 172ms
+2025-06-28 16:57:04.426 INFO 39044 [-/::ffff:127.0.0.1/-/192ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 192ms
+2025-06-28 16:57:06.450 INFO 39044 [-/::ffff:127.0.0.1/-/216ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 216ms
+2025-06-28 16:57:08.380 INFO 39044 [-/::ffff:127.0.0.1/-/157ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 157ms
+2025-06-28 16:57:10.384 INFO 39044 [-/::ffff:127.0.0.1/-/160ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 160ms
+2025-06-28 16:57:12.490 INFO 39044 [-/::ffff:127.0.0.1/-/174ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 174ms
+2025-06-28 16:57:14.365 INFO 39044 [-/::ffff:127.0.0.1/-/149ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 149ms
+2025-06-28 16:57:16.429 INFO 39044 [-/::ffff:127.0.0.1/-/162ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 162ms
+2025-06-28 16:57:18.388 INFO 39044 [-/::ffff:127.0.0.1/-/165ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 165ms
+2025-06-28 16:57:20.403 INFO 39044 [-/::ffff:127.0.0.1/-/173ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 173ms
+2025-06-28 16:57:22.425 INFO 39044 [-/::ffff:127.0.0.1/-/180ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 180ms
+2025-06-28 16:57:23.488 INFO 39044 [-/::ffff:127.0.0.1/-/712ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 712ms
+2025-06-28 16:57:24.403 INFO 39044 [-/::ffff:127.0.0.1/-/174ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 174ms
+2025-06-28 16:57:26.380 INFO 39044 [-/::ffff:127.0.0.1/-/151ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 151ms
+2025-06-28 16:57:28.423 INFO 39044 [-/::ffff:127.0.0.1/-/187ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 187ms
+2025-06-28 16:57:30.397 INFO 39044 [-/::ffff:127.0.0.1/-/171ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 170ms
+2025-06-28 16:57:32.422 INFO 39044 [-/::ffff:127.0.0.1/-/187ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 186ms
+2025-06-28 16:57:35.261 INFO 39044 [-/::ffff:127.0.0.1/-/305ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 305ms
+2025-06-28 16:57:35.452 INFO 39044 [-/::ffff:127.0.0.1/-/168ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 168ms
+2025-06-28 16:57:35.899 INFO 39044 [-/::ffff:127.0.0.1/-/150ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 150ms
+2025-06-28 16:57:37.910 INFO 39044 [-/::ffff:127.0.0.1/-/165ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 164ms
+2025-06-28 16:57:39.388 INFO 39044 [-/::ffff:127.0.0.1/-/760ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 760ms
+2025-06-28 16:57:39.950 INFO 39044 [-/::ffff:127.0.0.1/-/200ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 200ms
+2025-06-28 16:57:41.917 INFO 39044 [-/::ffff:127.0.0.1/-/170ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 170ms
+2025-06-28 16:57:43.948 INFO 39044 [-/::ffff:127.0.0.1/-/187ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 187ms
+2025-06-28 16:57:45.963 INFO 39044 [-/::ffff:127.0.0.1/-/193ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 193ms
+2025-06-28 16:57:47.948 INFO 39044 [-/::ffff:127.0.0.1/-/184ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 184ms
+2025-06-28 16:57:49.945 INFO 39044 [-/::ffff:127.0.0.1/-/184ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 184ms
+2025-06-28 16:57:51.950 INFO 39044 [-/::ffff:127.0.0.1/-/184ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 184ms
+2025-06-28 16:57:53.960 INFO 39044 [-/::ffff:127.0.0.1/-/191ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 191ms
+2025-06-28 16:57:55.940 INFO 39044 [-/::ffff:127.0.0.1/-/188ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 188ms
+2025-06-28 16:57:57.978 INFO 39044 [-/::ffff:127.0.0.1/-/166ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 166ms
+2025-06-28 16:57:59.954 INFO 39044 [-/::ffff:127.0.0.1/-/194ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 194ms
+2025-06-28 16:58:01.961 INFO 39044 [-/::ffff:127.0.0.1/-/206ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 206ms
+2025-06-28 16:58:03.969 INFO 39044 [-/::ffff:127.0.0.1/-/186ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 186ms
+2025-06-28 16:58:05.914 INFO 39044 [-/::ffff:127.0.0.1/-/154ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 154ms
+2025-06-28 16:58:08.002 INFO 39044 [-/::ffff:127.0.0.1/-/239ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 239ms
+2025-06-28 16:58:09.967 INFO 39044 [-/::ffff:127.0.0.1/-/216ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 216ms
+2025-06-28 16:58:11.915 INFO 39044 [-/::ffff:127.0.0.1/-/167ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 167ms
+2025-06-28 16:58:13.924 INFO 39044 [-/::ffff:127.0.0.1/-/167ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 166ms
+2025-06-28 16:58:15.917 INFO 39044 [-/::ffff:127.0.0.1/-/175ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 175ms
+2025-06-28 16:58:18.672 INFO 39044 [-/::ffff:127.0.0.1/-/343ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 343ms
+2025-06-28 16:58:18.859 INFO 39044 [-/::ffff:127.0.0.1/-/162ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 162ms
+2025-06-28 16:58:20.005 INFO 39044 [-/::ffff:127.0.0.1/-/154ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 154ms
+2025-06-28 16:58:22.157 INFO 39044 [-/::ffff:127.0.0.1/-/754ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 754ms
+2025-06-28 16:59:03.914 INFO 39044 [-/::ffff:127.0.0.1/-/818ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 818ms
+2025-06-28 16:59:49.565 WARN 19512 当期服务环境运行配置 => local
+2025-06-28 16:59:58.376 INFO 19512 [-/::ffff:127.0.0.1/-/1083ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 1083ms
+2025-06-28 17:00:25.583 INFO 19512 [-/::ffff:127.0.0.1/-/318ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 318ms
+2025-06-28 17:00:25.774 INFO 19512 [-/::ffff:127.0.0.1/-/161ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 161ms
+2025-06-28 17:00:26.283 INFO 19512 [-/::ffff:127.0.0.1/-/142ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 141ms
+2025-06-28 17:00:32.136 INFO 19512 [-/::ffff:127.0.0.1/-/664ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 664ms
+2025-06-28 17:01:15.672 WARN 5288 当期服务环境运行配置 => local
+2025-06-28 17:01:38.348 INFO 5288 [-/::ffff:127.0.0.1/-/19724ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 19723ms
+2025-06-28 17:06:04.512 WARN 27192 当期服务环境运行配置 => local
+2025-06-28 17:06:13.327 INFO 27192 [-/::ffff:127.0.0.1/-/5130ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 5129ms
+2025-06-28 17:09:17.145 INFO 27192 [-/::ffff:127.0.0.1/-/165351ms POST /mini/room/generate-qrcode] 
+访问接口: /mini/room/generate-qrcode 
+总耗时: 165350ms
+2025-06-28 17:09:17.561 INFO 27192 [-//-/356ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 356ms
+2025-06-28 17:09:17.666 INFO 27192 [-/::ffff:127.0.0.1/-/444ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 444ms
+2025-06-28 17:09:17.935 INFO 27192 [-/::ffff:127.0.0.1/-/232ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 232ms
+2025-06-28 17:09:19.229 INFO 27192 [-/::ffff:127.0.0.1/-/223ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 223ms
+2025-06-28 17:11:46.651 INFO 27192 [-/::ffff:127.0.0.1/-/361ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 361ms
+2025-06-28 17:11:46.864 INFO 27192 [-/::ffff:127.0.0.1/-/188ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 188ms
+2025-06-28 17:11:47.984 INFO 27192 [-/::ffff:127.0.0.1/-/203ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 203ms
+2025-06-28 17:12:03.314 INFO 27192 [-/::ffff:127.0.0.1/-/291ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 291ms
+2025-06-28 17:12:03.587 INFO 27192 [-/::ffff:127.0.0.1/-/215ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 215ms
+2025-06-28 17:12:04.415 INFO 27192 [-/::ffff:127.0.0.1/-/189ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 189ms
+2025-06-28 17:12:31.587 INFO 27192 [-/::ffff:127.0.0.1/-/357ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 357ms
+2025-06-28 17:12:31.942 INFO 27192 [-/::ffff:127.0.0.1/-/200ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 200ms
+2025-06-28 17:12:32.515 INFO 27192 [-/::ffff:127.0.0.1/-/189ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 189ms
+2025-06-28 17:13:05.468 INFO 27192 [-/::ffff:127.0.0.1/-/325ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 325ms
+2025-06-28 17:13:05.687 INFO 27192 [-/::ffff:127.0.0.1/-/198ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 198ms
+2025-06-28 17:13:06.571 INFO 27192 [-/::ffff:127.0.0.1/-/201ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 201ms
+2025-06-28 17:14:32.209 INFO 27192 [-/::ffff:127.0.0.1/-/347ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 347ms
+2025-06-28 17:14:32.516 INFO 27192 [-/::ffff:127.0.0.1/-/236ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 236ms
+2025-06-28 17:14:33.327 INFO 27192 [-/::ffff:127.0.0.1/-/191ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 191ms
+2025-06-28 17:15:44.067 INFO 27192 [-/::ffff:127.0.0.1/-/349ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 349ms
+2025-06-28 17:15:44.287 INFO 27192 [-/::ffff:127.0.0.1/-/201ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 201ms
+2025-06-28 17:15:45.941 INFO 27192 [-/::ffff:127.0.0.1/-/220ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 220ms
+2025-06-28 21:14:55.843 INFO 27192 [-/::ffff:127.0.0.1/-/474ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 473ms
+2025-06-28 21:14:56.083 INFO 27192 [-/::ffff:127.0.0.1/-/182ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 182ms
+2025-06-28 21:14:56.540 INFO 27192 [-/::ffff:127.0.0.1/-/174ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 174ms
+2025-06-28 21:15:32.934 INFO 27192 [-/::ffff:127.0.0.1/-/346ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 346ms
+2025-06-28 21:15:33.201 INFO 27192 [-/::ffff:127.0.0.1/-/191ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 191ms
+2025-06-28 21:15:33.732 INFO 27192 [-/::ffff:127.0.0.1/-/169ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 169ms
+2025-06-28 21:15:35.845 INFO 27192 [-/::ffff:127.0.0.1/-/110ms POST /mini/room/finish] 
+访问接口: /mini/room/finish 
+总耗时: 110ms
+2025-06-28 21:16:04.834 INFO 27192 [-/::ffff:127.0.0.1/-/388ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 388ms
+2025-06-28 21:16:04.959 INFO 27192 [-/::ffff:127.0.0.1/-/46ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 46ms
+2025-06-28 21:17:30.974 INFO 27192 [-/::ffff:127.0.0.1/-/334ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 334ms
+2025-06-28 21:17:31.083 INFO 27192 [-/::ffff:127.0.0.1/-/35ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 35ms
+2025-06-28 21:17:44.661 INFO 27192 [-/::ffff:127.0.0.1/-/362ms POST /mini/user/login] 
+访问接口: /mini/user/login 
+总耗时: 362ms
+2025-06-28 21:17:44.789 INFO 27192 [-/::ffff:127.0.0.1/-/71ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 71ms
+2025-06-28 21:17:50.074 INFO 27192 [-/::ffff:127.0.0.1/-/166ms POST /mini/room/create] 
+访问接口: /mini/room/create 
+总耗时: 166ms
+2025-06-28 21:17:51.054 INFO 27192 [-/::ffff:127.0.0.1/-/168ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 168ms
+2025-06-28 21:17:53.083 INFO 27192 [-/::ffff:127.0.0.1/-/198ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 198ms
+2025-06-28 21:17:55.227 INFO 27192 [-/::ffff:127.0.0.1/-/247ms POST /mini/room/active-room] 
+访问接口: /mini/room/active-room 
+总耗时: 247ms
+2025-06-28 21:17:55.266 INFO 27192 [-/::ffff:127.0.0.1/-/243ms POST /mini/room/finish] 
+访问接口: /mini/room/finish 
+总耗时: 243ms
+2025-06-28 21:48:02.728 WARN 24396 当期服务环境运行配置 => local

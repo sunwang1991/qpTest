@@ -134,6 +134,61 @@ export class TransactionService {
   }
 
   /**
+   * 获取房间交易记录（包含用户信息）
+   * @param roomId 房间ID
+   * @returns 包含用户信息的交易记录列表
+   */
+  async getRoomTransactionsWithUserInfo(roomId: number): Promise<any[]> {
+    try {
+      // 验证房间是否存在
+      const room = await this.roomRepository.findRoomById(roomId);
+      if (!room) {
+        throw new Error('房间不存在');
+      }
+
+      // 获取交易记录
+      const transactions = await this.transactionRepository.getRoomTransactions(
+        roomId
+      );
+
+      // 获取房间所有用户信息
+      const roomUsers = await this.roomRepository.selectUsersByRoomId(roomId);
+
+      // 创建用户信息映射
+      const userMap = new Map();
+      roomUsers.forEach(user => {
+        userMap.set(user.id, {
+          id: user.id,
+          nickName: user.nickName || '',
+          avatar: user.avatar || '',
+          sex: user.sex || '0',
+        });
+      });
+
+      // 为每个交易记录添加用户信息
+      const transactionsWithUserInfo = transactions.map(transaction => ({
+        ...transaction,
+        payUser: userMap.get(transaction.userId) || {
+          id: transaction.userId,
+          nickName: '未知用户',
+          avatar: '',
+          sex: '0',
+        },
+        receiveUser: userMap.get(transaction.receiveUserId) || {
+          id: transaction.receiveUserId,
+          nickName: '未知用户',
+          avatar: '',
+          sex: '0',
+        },
+      }));
+
+      return transactionsWithUserInfo;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  /**
    * 获取用户在房间内的交易记录
    * @param roomId 房间ID
    * @param userId 用户ID
@@ -162,6 +217,85 @@ export class TransactionService {
         roomId,
         userId
       );
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  /**
+   * 获取用户战绩统计
+   * @param userId 用户ID
+   * @returns 用户战绩统计信息
+   */
+  async getUserGameStats(userId: number): Promise<any> {
+    try {
+      // 获取用户所有交易记录（作为收入）
+      const receiveTransactions =
+        await this.transactionRepository.getUserReceiveTransactions(userId);
+
+      // 获取用户所有支付记录（作为支出）
+      const payTransactions =
+        await this.transactionRepository.getUserPayTransactions(userId);
+
+      // 计算总收入
+      const totalIncome = receiveTransactions.reduce(
+        (sum, transaction) => sum + transaction.payMoney,
+        0
+      );
+
+      // 计算总支出
+      const totalExpense = payTransactions.reduce(
+        (sum, transaction) => sum + transaction.payMoney,
+        0
+      );
+
+      // 计算净收入
+      const netIncome = totalIncome - totalExpense;
+
+      // 计算总局数（参与的不同房间数）
+      const allTransactions = [...receiveTransactions, ...payTransactions];
+      const uniqueRooms = new Set(allTransactions.map(t => t.roomId));
+      const totalGames = uniqueRooms.size;
+
+      // 计算胜利场次（净收入为正的房间数）
+      const roomStats = new Map();
+
+      // 统计每个房间的净收支
+      allTransactions.forEach(transaction => {
+        const roomId = transaction.roomId;
+        if (!roomStats.has(roomId)) {
+          roomStats.set(roomId, { income: 0, expense: 0 });
+        }
+
+        if (transaction.receiveUserId === userId) {
+          // 收入
+          roomStats.get(roomId).income += transaction.payMoney;
+        } else {
+          // 支出
+          roomStats.get(roomId).expense += transaction.payMoney;
+        }
+      });
+
+      // 计算胜利场次（净收入为正的房间）
+      let winGames = 0;
+      roomStats.forEach(stat => {
+        if (stat.income > stat.expense) {
+          winGames++;
+        }
+      });
+
+      // 计算胜率
+      const winRate = totalGames > 0 ? (winGames / totalGames) * 100 : 0;
+
+      return {
+        totalIncome, // 总收入
+        totalExpense, // 总支出
+        netIncome, // 净收入
+        totalGames, // 总局数
+        winGames, // 胜利场次
+        winRate: Math.round(winRate * 100) / 100, // 胜率（保留2位小数）
+        loseGames: totalGames - winGames, // 失败场次
+      };
     } catch (error) {
       throw error;
     }

@@ -15,7 +15,9 @@ export class TransactionRepository {
    * @param transactionData 交易数据
    * @returns 插入结果
    */
-  async insertTransaction(transactionData: Partial<TransactionModel>): Promise<InsertResult> {
+  async insertTransaction(
+    transactionData: Partial<TransactionModel>
+  ): Promise<InsertResult> {
     const result = await this.db
       .queryBuilder('')
       .createQueryBuilder()
@@ -61,7 +63,7 @@ export class TransactionRepository {
 
     // 合并统计数据
     const statsMap = new Map();
-    
+
     // 处理支出数据
     payStats.forEach(stat => {
       const userId = stat.userId;
@@ -114,14 +116,55 @@ export class TransactionRepository {
    * @param userId 用户ID
    * @returns 交易记录列表
    */
-  async getUserTransactionsInRoom(roomId: number, userId: number): Promise<TransactionModel[]> {
+  async getUserTransactionsInRoom(
+    roomId: number,
+    userId: number
+  ): Promise<TransactionModel[]> {
     const transactions = await this.db
       .queryBuilder('')
       .createQueryBuilder()
       .select('t')
       .from(TransactionModel, 't')
       .where('t.room_id = :roomId', { roomId })
-      .andWhere('(t.user_id = :userId OR t.receive_user_id = :userId)', { userId })
+      .andWhere('(t.user_id = :userId OR t.receive_user_id = :userId)', {
+        userId,
+      })
+      .orderBy('t.createTime', 'DESC')
+      .getMany();
+    return transactions;
+  }
+
+  /**
+   * 查询用户收到的所有交易记录
+   * @param userId 用户ID
+   * @returns 用户收到的交易记录列表
+   */
+  async getUserReceiveTransactions(
+    userId: number
+  ): Promise<TransactionModel[]> {
+    const transactions = await this.db
+      .queryBuilder('')
+      .createQueryBuilder()
+      .select('t')
+      .from(TransactionModel, 't')
+      .where('t.receive_user_id = :userId', { userId })
+      .orderBy('t.createTime', 'DESC')
+      .getMany();
+    return transactions;
+  }
+
+  /**
+   * 查询用户支付的所有交易记录
+   * @param userId 用户ID
+   * @returns 用户支付的交易记录列表
+   */
+  async getUserPayTransactions(userId: number): Promise<TransactionModel[]> {
+    const transactions = await this.db
+      .queryBuilder('')
+      .createQueryBuilder()
+      .select('t')
+      .from(TransactionModel, 't')
+      .where('t.user_id = :userId', { userId })
       .orderBy('t.createTime', 'DESC')
       .getMany();
     return transactions;

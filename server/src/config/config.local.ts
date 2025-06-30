@@ -30,9 +30,9 @@ export default {
     dataSource: {
       // 单数据库实例
       default: {
-        host: 'localhost',
+        host: '113.46.139.108',
         port: 3306,
-        username: 'root',
+        username: 'qpChess',
         password: '123456',
         database: 'qpchess',
         synchronize: false, // 如果第一次使用，不关闭它，会自动创建数据库表

@@ -1,0 +1,45 @@
+2025-06-29 08:24:56.041 INFO 21524 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-29 08:24:56.051 ERROR 21524 [midway:redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+  errno: -4078,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 6379
+}
+2025-06-29 08:30:25.387 INFO 18072 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-29 08:30:25.397 INFO 18072 [midway:redis] client connect success
+2025-06-29 08:30:25.525 INFO 18072 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-29 08:30:25.526 INFO 18072 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-06-29 21:03:59.997 INFO 13028 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-29 21:04:00.081 INFO 13028 [midway:redis] client connect success
+2025-06-29 21:04:00.375 INFO 13028 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-29 21:04:00.378 INFO 13028 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-06-29 21:11:34.324 INFO 33984 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-29 21:11:34.336 INFO 33984 [midway:redis] client connect success
+2025-06-29 21:11:34.860 INFO 33984 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-29 21:11:34.864 INFO 33984 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-06-29 21:11:48.522 INFO 37080 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-29 21:11:48.533 INFO 37080 [midway:redis] client connect success
+2025-06-29 21:11:48.830 INFO 37080 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-29 21:11:48.831 INFO 37080 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-06-29 21:29:22.056 INFO 32916 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-29 21:29:22.104 INFO 32916 [midway:redis] client connect success
+2025-06-29 21:29:22.440 INFO 32916 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-29 21:29:22.442 INFO 32916 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-06-29 21:29:34.639 INFO 38896 [midway:redis] server connecting redis://:***@localhost:6379
+2025-06-29 21:29:34.650 INFO 38896 [midway:redis] client connect success
+2025-06-29 21:29:34.945 INFO 38896 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-29 21:29:34.964 INFO 38896 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-06-29 21:29:34.968 INFO 38896 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-29 21:29:34.975 INFO 38896 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-29 21:29:34.981 INFO 38896 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-29 21:29:34.998 INFO 38896 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-29 21:29:35.000 INFO 38896 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-06-29 21:29:35.002 INFO 38896 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-06-29 21:29:35.077 INFO 38896 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-06-29 21:29:35.142 INFO 38896 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-06-29 21:29:35.167 INFO 38896 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-29 21:29:35.168 INFO 38896 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-06-29 21:29:35.168 INFO 38896 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-06-29 21:29:35.176 INFO 38896 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload

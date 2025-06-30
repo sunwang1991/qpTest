@@ -7,6 +7,8 @@ import { UserModel } from '../model/user';
 export declare class UserController {
     /**用户服务 */
     private userService;
+    /**交易服务 */
+    private transactionService;
     /**用户注册 */
     register(user: UserModel): Promise<Resp>;
     /**用户登录 */

@@ -112,7 +112,7 @@ const loginRules = {
 const codeUrl = ref('');
 const loading = ref(false);
 // 验证码开关
-const captchaEnabled = ref(false);
+const captchaEnabled = ref(true);
 // 注册开关
 const register = ref(true);
 const redirect = ref(undefined);

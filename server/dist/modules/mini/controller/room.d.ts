@@ -8,6 +8,10 @@ export declare class RoomController {
     private roomService;
     /**交易服务 */
     private transactionService;
+    /**缓存服务 */
+    private redisCache;
+    /**access_token缓存 */
+    private static accessTokenCache;
     /**创建房间 */
     create(data: {
         creator: number;
@@ -58,4 +62,38 @@ export declare class RoomController {
         receiveUserId: number;
         amount: number;
     }): Promise<Resp>;
+    /**
+     * 获取房间交易记录
+     */
+    getRoomTransactions(data: {
+        roomId: number;
+        userId?: number;
+    }): Promise<Resp>;
+    /**
+     * 获取房间交易统计和记录
+     */
+    getRoomTransactionStats(data: {
+        roomId: number;
+    }): Promise<Resp>;
+    /**
+     * 生成小程序二维码
+     */
+    generateQrcode(data: {
+        roomId: number;
+        path?: string;
+        width?: number;
+    }): Promise<Resp>;
+    /**
+     * 获取微信小程序access_token
+  
+     */
+    private getWechatAccessToken;
+    /**
+     * 清除access_token缓存（用于调试或强制刷新）
+     */
+    clearTokenCache(): Promise<Resp>;
+    /**
+     * 获取access_token缓存状态（用于调试）
+     */
+    getTokenCacheStatus(): Promise<Resp>;
 }

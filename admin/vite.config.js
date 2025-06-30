@@ -32,11 +32,11 @@ export default defineConfig(({ mode, command }) => {
       open: false, // 完成后自动跳转浏览器打开
       proxy: {
         // https://cn.vitejs.dev/config/#server-proxy
-        [env.VITE_API_BASE_URL]: {
-          target: 'http://127.0.0.1:6275',
-          changeOrigin: true,
-          rewrite: p => p.replace(env.VITE_API_BASE_URL, ''),
-        },
+        // [env.VITE_API_BASE_URL]: {
+        //   target: 'http://127.0.0.1:6275',
+        //   changeOrigin: true,
+        //   rewrite: p => p.replace(env.VITE_API_BASE_URL, ''),
+        // },
       },
     },
     //fix:error:stdin>:7356:1: warning: "@charset" must be the first rule in the file
