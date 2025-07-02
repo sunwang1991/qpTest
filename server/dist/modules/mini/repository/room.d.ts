@@ -32,4 +32,24 @@ export declare class RoomRepository {
     updateRoom(roomId: number, roomData: Partial<RoomModel>): Promise<import("typeorm").UpdateResult>;
     /**软删除房间 */
     deleteRoom(roomId: number): Promise<import("typeorm").UpdateResult>;
+    /**
+     * 查询对局记录（分页）
+     * @param params 查询参数
+     * @returns 房间记录列表
+     */
+    getGameRecords(params: {
+        userId?: number;
+        roomId?: number;
+        offset: number;
+        limit: number;
+    }): Promise<RoomModel[]>;
+    /**
+     * 查询对局记录总数
+     * @param params 查询参数
+     * @returns 总记录数
+     */
+    getGameRecordsCount(params: {
+        userId?: number;
+        roomId?: number;
+    }): Promise<number>;
 }

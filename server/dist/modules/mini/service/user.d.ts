@@ -5,6 +5,7 @@ import { UserModel } from '../model/user';
 export declare class UserService {
     private userRepository;
     private http;
+    private sysDictDataRepository;
     /**
      * 账号注册
      * userInfo: 用户信息

@@ -1,0 +1,36 @@
+2025-07-02 07:06:21.106 ERROR 26564 [-/::ffff:127.0.0.1/-/50ms POST /mini/user/login] [Recovery][0] panic recovered: /mini/user/login => CSRFError invalid csrf referer
+2025-07-02 07:06:21.112 ERROR 26564 [-/::ffff:127.0.0.1/-/56ms POST /mini/user/login] 详细错误信息: {
+  stack: 'CSRFError: invalid csrf referer\n' +
+    '    at CsrfMiddleware.checkCSRFReferer (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\security\\dist\\middleware\\csrf.middleware.js:119:19)\n' +
+    '    at CsrfMiddleware.assertCsrf (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\security\\dist\\middleware\\csrf.middleware.js:54:22)\n' +
+    '    at Object.context.assertCsrf (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\security\\dist\\middleware\\csrf.middleware.js:21:18)\n' +
+    '    at CsrfMiddleware.compatibleMiddleware (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\security\\dist\\middleware\\csrf.middleware.js:43:21)\n' +
+    '    at E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\security\\dist\\middleware\\base.js:33:29\n' +
+    '    at dispatch (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\core\\dist\\service\\middlewareService.js:103:48)\n' +
+    '    at SecurityHelper.compatibleMiddleware (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\security\\dist\\middleware\\helper.js:33:16)\n' +
+    '    at E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\security\\dist\\middleware\\helper.js:22:29\n' +
+    '    at dispatch (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\core\\dist\\service\\middlewareService.js:103:48)\n' +
+    '    at E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\i18n\\dist\\middleware.js:150:23\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at bodyParser (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\koa-bodyparser\\index.js:78:5)\n' +
+    '    at session (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\session\\dist\\middleware\\session.js:137:17)\n' +
+    '    at E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\core\\dist\\baseFramework.js:273:40\n' +
+    '    at E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\core\\dist\\baseFramework.js:267:24\n' +
+    '    at midwayRootMiddleware (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\@midwayjs\\koa\\dist\\framework.js:141:13)',
+  headers: {
+    host: '127.0.0.1:6275',
+    connection: 'keep-alive',
+    'content-length': '43',
+    'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.06.2306020 MicroMessenger/8.0.5 Language/zh_CN webview/',
+    'content-type': 'application/json',
+    accept: '*/*',
+    'sec-fetch-site': 'same-site',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-dest': 'empty',
+    referer: 'https://servicewechat.com/wxecb8522186879691/devtools/page-frame.html',
+    'accept-encoding': 'gzip, deflate, br',
+    'accept-language': 'zh-CN,zh;q=0.9'
+  },
+  query: [Object: null prototype] {},
+  body: { code: '0b1KVvFa1oQxRJ0oFtIa1WBDOQ1KVvFx' }
+}

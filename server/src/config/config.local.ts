@@ -20,7 +20,12 @@ export default {
       // 允许调用的域名地址的，例如：http://192.168.56.101/mask-antd/
       refererWhiteList: [
         'servicewechat.com', // 微信小程序域名
+        'mp.weixin.qq.com', // 微信公众平台
+        'https://www.sunwang.top', // 完整URL格式
+        'www.sunwang.top', // 仅域名
+        'sunwang.top', // 裸域名
         'localhost:6265', // 本地前端
+        '127.0.0.1:6275', // 本地开发
       ],
     },
   },

@@ -10,6 +10,8 @@ export declare class RoomController {
     private transactionService;
     /**缓存服务 */
     private redisCache;
+    /**字典数据仓库 */
+    private sysDictDataRepository;
     /**access_token缓存 */
     private static accessTokenCache;
     /**创建房间 */
@@ -76,6 +78,15 @@ export declare class RoomController {
         roomId: number;
     }): Promise<Resp>;
     /**
+     * 查询对局记录（分页）
+     */
+    getGameRecords(data: {
+        userId?: number;
+        page?: number;
+        pageSize?: number;
+        roomId?: number;
+    }): Promise<Resp>;
+    /**
      * 生成小程序二维码
      */
     generateQrcode(data: {
@@ -85,7 +96,6 @@ export declare class RoomController {
     }): Promise<Resp>;
     /**
      * 获取微信小程序access_token
-  
      */
     private getWechatAccessToken;
     /**

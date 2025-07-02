@@ -6,16 +6,6 @@
   "auditLog": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\.audit\\.90050797f4a9c3b874dc4e802507f27cfbb686df-audit.json",
   "files": [
     {
-      "date": 1750649831420,
-      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\common-error.log.2025-06-23",
-      "hash": "2d01a4d30d12aad03846464984c48529"
-    },
-    {
-      "date": 1750746574381,
-      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\common-error.log.2025-06-24",
-      "hash": "86fbe0431a6f246672c75a14df44841b"
-    },
-    {
       "date": 1750812781924,
       "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\common-error.log.2025-06-25",
       "hash": "5e781dcd90d7ae2f5ef32ae0b337a3bd"
@@ -44,6 +34,16 @@
       "date": 1751245088330,
       "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\common-error.log.2025-06-30",
       "hash": "3488b9179323f778103264bb54b0730f"
+    },
+    {
+      "date": 1751343960726,
+      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\common-error.log.2025-07-01",
+      "hash": "8402928a6ae13253c5470afeb91dcded"
+    },
+    {
+      "date": 1751410915005,
+      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\common-error.log.2025-07-02",
+      "hash": "c8bf1ac3da2239b2a91657b8a736622e"
     }
   ],
   "hashType": "md5"

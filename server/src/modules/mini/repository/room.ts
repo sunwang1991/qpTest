@@ -200,4 +200,75 @@ export class RoomRepository {
       .execute();
     return result;
   }
+
+  /**
+   * 查询对局记录（分页）
+   * @param params 查询参数
+   * @returns 房间记录列表
+   */
+  async getGameRecords(params: {
+    userId?: number;
+    roomId?: number;
+    offset: number;
+    limit: number;
+  }): Promise<RoomModel[]> {
+    let query = this.db
+      .queryBuilder('')
+      .createQueryBuilder()
+      .select('r')
+      .from(RoomModel, 'r')
+      .where('r.isDelete = :isDelete', { isDelete: false });
+
+    // 如果指定了用户ID，查询该用户参与的房间
+    if (params.userId) {
+      query = query
+        .innerJoin('room_user', 'ru', 'ru.room_id = r.id')
+        .andWhere('ru.user_id = :userId', { userId: params.userId });
+    }
+
+    // 如果指定了房间ID
+    if (params.roomId) {
+      query = query.andWhere('r.id = :roomId', { roomId: params.roomId });
+    }
+
+    const rooms = await query
+      .orderBy('r.updateTime', 'DESC')
+      .offset(params.offset)
+      .limit(params.limit)
+      .getMany();
+
+    return rooms;
+  }
+
+  /**
+   * 查询对局记录总数
+   * @param params 查询参数
+   * @returns 总记录数
+   */
+  async getGameRecordsCount(params: {
+    userId?: number;
+    roomId?: number;
+  }): Promise<number> {
+    let query = this.db
+      .queryBuilder('')
+      .createQueryBuilder()
+      .select('COUNT(DISTINCT r.id)', 'count')
+      .from(RoomModel, 'r')
+      .where('r.isDelete = :isDelete', { isDelete: false });
+
+    // 如果指定了用户ID，查询该用户参与的房间
+    if (params.userId) {
+      query = query
+        .innerJoin('room_user', 'ru', 'ru.room_id = r.id')
+        .andWhere('ru.user_id = :userId', { userId: params.userId });
+    }
+
+    // 如果指定了房间ID
+    if (params.roomId) {
+      query = query.andWhere('r.id = :roomId', { roomId: params.roomId });
+    }
+
+    const result = await query.getRawOne();
+    return parseInt(result.count) || 0;
+  }
 }

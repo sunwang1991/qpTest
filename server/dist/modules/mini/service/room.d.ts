@@ -4,6 +4,7 @@ import { RoomModel } from '../model/room';
  */
 export declare class RoomService {
     private roomRepository;
+    private transactionRepository;
     /**
      * 创建房间
      * @param creator 创建者ID
@@ -64,4 +65,15 @@ export declare class RoomService {
      * 加入房间
      */
     joinRoom(userId: number, roomId: number): Promise<RoomModel>;
+    /**
+     * 查询对局记录（分页）
+     * @param params 查询参数
+     * @returns 对局记录列表
+     */
+    getGameRecords(params: {
+        userId?: number;
+        roomId?: number;
+        page: number;
+        pageSize: number;
+    }): Promise<any>;
 }

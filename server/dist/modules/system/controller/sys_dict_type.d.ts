@@ -23,6 +23,7 @@ export declare class SysDictTypeController {
     refresh(): Promise<Resp>;
     /**字典类型选择框列表 */
     options(): Promise<{
+        /**字典类型服务 */
         code: number;
         msg: string;
         data: {

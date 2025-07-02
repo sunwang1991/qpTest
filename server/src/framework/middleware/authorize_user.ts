@@ -114,9 +114,7 @@ function verifyRolePermission(
   // 只需含有其中权限
   let hasPerms = false;
   if (options.hasPerms && options.hasPerms.length > 0) {
-    hasPerms = options.hasPerms.some(p =>
-      permissions.some(up => up === p)
-    );
+    hasPerms = options.hasPerms.some(p => permissions.some(up => up === p));
   }
   // 同时匹配其中角色
   let matchRoles = false;

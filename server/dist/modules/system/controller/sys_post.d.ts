@@ -18,6 +18,7 @@ export declare class SysPostController {
     remove(postId: string): Promise<Resp>;
     /**导出岗位信息 */
     export(query: Record<string, string>): Promise<{
+        /**岗位信息 */
         code: number;
         msg: string;
     } | import("exceljs").Buffer>;

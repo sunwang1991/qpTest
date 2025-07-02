@@ -2,6 +2,7 @@ import { Inject, Provide } from '@midwayjs/core';
 import { UserModel } from '../model/user';
 import { UserRepository } from '../repository/user';
 import { HttpService } from '../../common/service/http.service';
+import { SysDictDataRepository } from '../../system/repository/sys_dict_data';
 /**
  * 用户信息 服务层处理
  */
@@ -12,6 +13,9 @@ export class UserService {
 
   @Inject()
   private http: HttpService;
+
+  @Inject()
+  private sysDictDataRepository: SysDictDataRepository;
 
   /**
    * 账号注册
@@ -53,13 +57,17 @@ export class UserService {
    * @returns openId
    */
   async getOpenId(code: string): Promise<string> {
+    let miniDict = await this.sysDictDataRepository.selectByPage({
+      dictType: 'mini_appid_secret',
+    });
+    let miniConfig = JSON.parse(miniDict[0][0].dataValue);
     // 发送请求，获取session
     const result = await this.http.get(
       'https://api.weixin.qq.com/sns/jscode2session',
       {
         js_code: code,
-        appid: 'wxecb8522186879691',
-        secret: '1eb1d2532fc2c1659a828f32b946a0b6',
+        appid: miniConfig.appid,
+        secret: miniConfig.secret,
         grant_type: 'authorization_code',
       }
     );

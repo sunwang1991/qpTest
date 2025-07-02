@@ -1,6 +1,7 @@
 import { Inject, Provide } from '@midwayjs/core';
 import { RoomModel } from '../model/room';
 import { RoomRepository } from '../repository/room';
+import { TransactionRepository } from '../repository/transaction';
 import { ResultSetHeader } from 'mysql2';
 
 /**
@@ -10,6 +11,9 @@ import { ResultSetHeader } from 'mysql2';
 export class RoomService {
   @Inject()
   private roomRepository: RoomRepository;
+
+  @Inject()
+  private transactionRepository: TransactionRepository;
 
   /**
    * 创建房间
@@ -175,6 +179,10 @@ export class RoomService {
       throw new Error('房间不存在');
     }
 
+    if (room.statusFlag !== '1') {
+      throw new Error('房间已结束');
+    }
+
     // 验证用户是否已加入房间
     const roomUsers = await this.roomRepository.selectUsersByRoomId(roomId);
     const userExists = roomUsers.some(user => user.id === userId);
@@ -185,5 +193,99 @@ export class RoomService {
     // 加入房间
     await this.roomRepository.insertRoomUser(roomId, userId);
     return room;
+  }
+
+  /**
+   * 查询对局记录（分页）
+   * @param params 查询参数
+   * @returns 对局记录列表
+   */
+  async getGameRecords(params: {
+    userId?: number;
+    roomId?: number;
+    page: number;
+    pageSize: number;
+  }): Promise<any> {
+    const { userId, roomId, page, pageSize } = params;
+    const offset = (page - 1) * pageSize;
+
+    try {
+      // 获取房间列表（根据条件筛选）
+      const rooms = await this.roomRepository.getGameRecords({
+        userId,
+        roomId,
+        offset,
+        limit: pageSize,
+      });
+
+      // 获取总数
+      const total = await this.roomRepository.getGameRecordsCount({
+        userId,
+        roomId,
+      });
+
+      // 为每个房间获取成员收入情况
+      const gameRecordsWithStats = await Promise.all(
+        rooms.map(async (room: any) => {
+          // 获取房间成员
+          const roomUsers = await this.roomRepository.selectUsersByRoomId(
+            room.id
+          );
+
+          // 获取房间交易统计
+          const transactionStats =
+            await this.transactionRepository.getRoomUserTransactionStats(
+              room.id
+            );
+
+          // 合并用户信息和交易统计
+          const membersIncome = roomUsers.map((user: any) => {
+            const userStat = transactionStats.find(
+              stat => stat.userId === user.id
+            );
+            return {
+              userId: user.id,
+              nickName: user.nickName || '',
+              avatar: user.avatar || '',
+              totalPay: userStat ? userStat.totalPay : 0,
+              totalReceive: userStat ? userStat.totalReceive : 0,
+              netAmount: userStat ? userStat.netAmount : 0,
+            };
+          });
+
+          // 计算房间总交易金额
+          const totalTransactionAmount = transactionStats.reduce(
+            (sum, stat) => sum + stat.totalPay,
+            0
+          );
+
+          return {
+            ...room,
+            membersIncome,
+            totalTransactionAmount,
+            memberCount: roomUsers.length,
+            // 房间状态描述
+            statusText: room.statusFlag === '1' ? '进行中' : '已结束',
+            // 格式化时间
+            createTimeFormatted: new Date(room.createTime).toLocaleString(),
+            updateTimeFormatted: new Date(room.updateTime).toLocaleString(),
+          };
+        })
+      );
+
+      return {
+        records: gameRecordsWithStats,
+        pagination: {
+          page,
+          pageSize,
+          total,
+          totalPages: Math.ceil(total / pageSize),
+          hasNext: page * pageSize < total,
+          hasPrev: page > 1,
+        },
+      };
+    } catch (error) {
+      throw error;
+    }
   }
 }

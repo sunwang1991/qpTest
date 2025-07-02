@@ -6,16 +6,6 @@
   "auditLog": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\.audit\\.80b005ded8f1dc0368b93a8612d3ea8b95796a2c-audit.json",
   "files": [
     {
-      "date": 1750649831416,
-      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-core.log.2025-06-23",
-      "hash": "80c7ec93582d31224477d541f9a96f26"
-    },
-    {
-      "date": 1750746574377,
-      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-core.log.2025-06-24",
-      "hash": "8af29679df5cd74ca36b23ef4cac50bd"
-    },
-    {
       "date": 1750812781918,
       "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-core.log.2025-06-25",
       "hash": "3421af2e6f62cc41d4683e2cdd97a932"
@@ -44,6 +34,16 @@
       "date": 1751245088326,
       "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-core.log.2025-06-30",
       "hash": "1a9264d046726629edb4f94adb329717"
+    },
+    {
+      "date": 1751343960721,
+      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-core.log.2025-07-01",
+      "hash": "cb28029348e2994a40e3bc2405c7ce40"
+    },
+    {
+      "date": 1751410915000,
+      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-core.log.2025-07-02",
+      "hash": "ec4ecd66e5f2d0212e4fe878c906f236"
     }
   ],
   "hashType": "md5"

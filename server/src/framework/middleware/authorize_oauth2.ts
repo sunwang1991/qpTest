@@ -50,7 +50,10 @@ export class AuthorizeOauth2 implements IMiddleware<Context, NextFunction> {
         }
         if (!hasScope) {
           c.status = 403;
-          return Resp.codeMsg(403001, `unauthorized access ${c.method} ${c.path}`);
+          return Resp.codeMsg(
+            403001,
+            `unauthorized access ${c.method} ${c.path}`
+          );
         }
       }
 

@@ -12,11 +12,14 @@ export default {
   // 安全
   security: {
     csrf: {
-      // 允许调用的域名地址的，例如：http://<Referer>/mask-api
+      enable: true,
+      type: 'referer',
       refererWhiteList: [
-        'servicewechat.com',
-        'https://www.sunwang.top:6275',
-        'https://sunwang.top:6275',
+        'servicewechat.com', // 微信小程序域名
+        'mp.weixin.qq.com', // 微信公众平台
+        'https://www.sunwang.top', // 完整URL格式
+        'www.sunwang.top', // 仅域名
+        'sunwang.top', // 裸域名
       ],
     },
   },
@@ -56,6 +59,4 @@ export default {
       },
     },
   },
-
-  //
 } as MidwayConfig;

@@ -3,6 +3,7 @@ import { Resp } from '../../../framework/resp/api';
 import { RoomService } from '../service/room';
 import { TransactionService } from '../service/transaction';
 import { RedisCache } from '../../../framework/datasource/redis/redis';
+import { SysDictDataRepository } from '../../system/repository/sys_dict_data';
 import axios from 'axios';
 
 /**
@@ -22,6 +23,10 @@ export class RoomController {
   /**缓存服务 */
   @Inject()
   private redisCache: RedisCache;
+
+  /**字典数据仓库 */
+  @Inject()
+  private sysDictDataRepository: SysDictDataRepository;
 
   /**access_token缓存 */
   private static accessTokenCache: {
@@ -319,6 +324,40 @@ export class RoomController {
   }
 
   /**
+   * 查询对局记录（分页）
+   */
+  @Post('/game-records')
+  public async getGameRecords(
+    @Body()
+    data: {
+      userId?: number;
+      page?: number;
+      pageSize?: number;
+      roomId?: number;
+    }
+  ): Promise<Resp> {
+    try {
+      const page = data.page || 1;
+      const pageSize = data.pageSize || 10;
+
+      if (pageSize > 50) {
+        return Resp.errMsg('每页最多查询50条记录');
+      }
+
+      const gameRecords = await this.roomService.getGameRecords({
+        userId: data.userId,
+        roomId: data.roomId,
+        page,
+        pageSize,
+      });
+
+      return Resp.okData(gameRecords);
+    } catch (error) {
+      return Resp.errMsg(error.message || '查询对局记录失败');
+    }
+  }
+
+  /**
    * 生成小程序二维码
    */
   @Post('/generate-qrcode')
@@ -421,7 +460,6 @@ export class RoomController {
 
   /**
    * 获取微信小程序access_token
-
    */
   private async getWechatAccessToken(): Promise<string | null> {
     try {
@@ -433,12 +471,12 @@ export class RoomController {
         return cacheValue;
       }
 
-      const { appId, appSecret } = {
-        appId: 'wxecb8522186879691',
-        appSecret: '1eb1d2532fc2c1659a828f32b946a0b6',
-      };
+      let miniDict = await this.sysDictDataRepository.selectByPage({
+        dictType: 'mini_appid_secret',
+      });
+      let miniConfig = JSON.parse(miniDict[0][0].dataValue);
 
-      const tokenUrl = `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${appId}&secret=${appSecret}`;
+      const tokenUrl = `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${miniConfig.appid}&secret=${miniConfig.secret}`;
 
       const response = await axios.get(tokenUrl, { timeout: 5000 });
 
