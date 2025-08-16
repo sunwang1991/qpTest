@@ -89,6 +89,18 @@ export class RoomRepository {
     return room;
   }
 
+  // 异步删除房间
+  async deleteRooms(rooms: Array<number>) {
+    const room = await this.db
+      .queryBuilder('')
+      .createQueryBuilder()
+      .delete()
+      .from(RoomModel)
+      .where('id IN (:...ids)', { ids: rooms })
+      .execute();
+    return room;
+  }
+
   /**新增房间用户关联 */
   async insertRoomUser(roomId: number, userId: number) {
     const roomUser = await this.db
@@ -232,7 +244,7 @@ export class RoomRepository {
     }
 
     const rooms = await query
-      .orderBy('r.updateTime', 'DESC')
+      .orderBy('r.createTime', 'DESC') // 按更新时间降序排列
       .offset(params.offset)
       .limit(params.limit)
       .getMany();

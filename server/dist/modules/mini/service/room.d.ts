@@ -44,6 +44,12 @@ export declare class RoomService {
      */
     finishRoom(roomId: number, userId: number): Promise<boolean>;
     /**
+     * 删除房间
+     * @param roomIds 房间ID列表
+     * @returns 是否成功
+     * */
+    delRooms(roomIds: number[]): Promise<boolean>;
+    /**
      * 更新房间信息
      * @param roomId 房间ID
      * @param userId 操作用户ID（验证权限）

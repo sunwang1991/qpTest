@@ -86,10 +86,10 @@ export class RoomController {
     @Body() data: { userId: number }
   ): Promise<Resp> {
     try {
-      if (!data.userId) return Resp.errMsg('用户ID不能为空');
+      if (!data.userId) return Resp.okData('用户ID不能为空');
 
       const room = await this.roomService.getUserActiveRoom(data.userId);
-      if (!room) return Resp.errMsg('用户没有进行中的房间');
+      if (!room) return Resp.okData('用户没有进行中的房间');
 
       // 获取房间用户信息
       const users = await this.roomService.getRoomUsers(room.id);
@@ -342,6 +342,10 @@ export class RoomController {
 
       if (pageSize > 50) {
         return Resp.errMsg('每页最多查询50条记录');
+      }
+
+      if (!data.userId) {
+        return Resp.errMsg('用户ID不能为空');
       }
 
       const gameRecords = await this.roomService.getGameRecords({

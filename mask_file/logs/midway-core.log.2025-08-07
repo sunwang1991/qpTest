@@ -1,0 +1,14 @@
+2025-08-07 11:44:30.569 INFO 15044 [midway:redis] server connecting redis://:***@localhost:6379
+2025-08-07 11:44:30.583 INFO 15044 [midway:redis] client connect success
+2025-08-07 14:31:14.430 INFO 15044 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-08-07 14:31:14.434 INFO 15044 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-08-07 15:21:59.221 INFO 28744 [midway:redis] server connecting redis://:***@localhost:6379
+2025-08-07 15:21:59.242 INFO 28744 [midway:redis] client connect success
+2025-08-07 15:22:09.781 INFO 28744 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-08-07 15:22:09.782 INFO 28744 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload
+2025-08-07 15:25:21.699 INFO 13156 [midway:redis] server connecting redis://:***@localhost:6379
+2025-08-07 15:25:21.713 INFO 13156 [midway:redis] client connect success
+2025-08-07 15:25:22.427 INFO 33276 [midway:redis] server connecting redis://:***@localhost:6379
+2025-08-07 15:25:22.440 INFO 33276 [midway:redis] client connect success
+2025-08-07 15:25:23.103 INFO 13156 [midway:static] starting static serve /static -> E:\兴元\开门柜项目\chess\mask_file\static
+2025-08-07 15:25:23.107 INFO 13156 [midway:static] starting static serve /upload -> E:\兴元\开门柜项目\chess\mask_file\upload

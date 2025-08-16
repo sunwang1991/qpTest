@@ -1,5 +1,5 @@
 <template>
-  <div class="container">love</div>
+  <div class="container">love2025</div>
 </template>
 
 <script setup></script>

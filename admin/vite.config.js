@@ -81,8 +81,11 @@ export default defineConfig(({ mode, command }) => {
         svgoOptions: command === 'build',
       }),
       Compression({
+        // 是否输出详细信息
         verbose: false,
+        // 文件扩展名
         ext: '.gz',
+        // 是否删除原始文件
         deleteOriginFile: false,
       }),
     ],

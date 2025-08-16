@@ -20,6 +20,7 @@ export default {
         'https://www.sunwang.top', // 完整URL格式
         'www.sunwang.top', // 仅域名
         'sunwang.top', // 裸域名
+        'localhost:6265', // 本地开发
       ],
     },
   },

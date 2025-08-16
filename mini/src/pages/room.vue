@@ -20,7 +20,7 @@
 
 						<!-- 玩家信息 -->
 						<view class="player-info">
-							<view class="player-name">{{ item.nickName }}</view>
+							<view class="player-name">{{ item.nickName||item.id }}</view>
 							<view :class="[
                   'player-amount',
                   item.netAmount > 0
@@ -127,7 +127,7 @@
 		<Dialog v-model="showSettleDialog" title="本局结算" :show-cancel-button="false" confirm-text="确定"
 			@confirm="handleSettleConfirm">
 			<view class="settle-content">
-<!-- 				<view class="settle-summary">
+				<!-- 		<view class="settle-summary">
 					<view class="summary-item">
 						<text class="summary-label">游戏时长：</text>
 						<text class="summary-value">{{ getGameDuration() }}</text>
@@ -138,12 +138,12 @@
 					</view>
 				</view> -->
 
-				<view class="settle-players">
+				<view class="settle-players" v-if="roomInfo?.users">
 					<!-- <view class="settle-title">玩家结算</view> -->
 					<view v-for="player in getSortedPlayers()" :key="player.id" class="settle-player-item">
 						<view class="settle-player-info">
 							<image :src="player.avatar" mode="aspectFill" class="settle-avatar"></image>
-							<text class="settle-name">{{ player.nickName }}</text>
+							<text class="settle-name">{{ player.nickName||player.id }}</text>
 						</view>
 						<view :class="[
                 'settle-amount',
@@ -157,6 +157,7 @@
 						</view>
 					</view>
 				</view>
+				<view v-else>未进行交易</view>
 			</view>
 		</Dialog>
 
@@ -247,15 +248,21 @@
 					userId: userId.value,
 				})
 				.then((res) => {
-					roomInfo.value = res.data;
-					gameOver.value = false
-					resolve(res.data);
+					if (res.data?.id) {
+						roomInfo.value = res.data;
+						gameOver.value = false
+						resolve(res.data);
+					} else {
+						proxy.$modal.msg("房间不存在或者已结束");
+						clearInterval(timer)
+						gameOver.value = true
+						showSettleDialog.value = true
+						reject("房间不存在或者已结束");
+					}
 				})
 				.catch((error) => {
-					proxy.$modal.msg("房间已结束");
+					proxy.$modal.msg("请刷新重试");
 					clearInterval(timer)
-					gameOver.value = true
-					showSettleDialog.value = true
 					reject(error);
 				});
 		});

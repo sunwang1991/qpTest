@@ -78,13 +78,18 @@ export class FileController {
   }
 
   /**上传文件 */
-  @Post('/upload', {
-    middleware: [AuthorizeUserMiddleware()],
-  })
+  // @Post('/upload', {
+  //   middleware: [AuthorizeUserMiddleware()],
+  // })
+  @Post('/upload')
+  // 上传文件
   public async upload(
+    // 获取上传的文件
     @Files('file') files: UploadFileInfo<string>[],
+    // 获取子路径
     @Fields('subPath') subPath: string
   ) {
+    // 如果上传的文件数量不为1，则返回错误信息
     if (files.length !== 1) {
       this.c.status = 422;
       return Resp.codeMsg(422002, 'bind err: field file not upload');
@@ -93,24 +98,30 @@ export class FileController {
 
     // 子路径需要在指定范围内
     const ok = UPLOAD_SUB_PATH[subPath];
+    // 如果子路径不为空且不在指定范围内，则返回错误信息
     if (subPath && !ok) {
       this.c.status = 422;
       return Resp.codeMsg(422002, 'bind err: subPath not in range');
     }
+    // 如果子路径为空，则设置为默认值
     if (!subPath) {
       subPath = UPLOAD_COMMON;
     }
 
+    // 转移上传的文件
     const [uploadFilePath, err] = await this.fileUtil.transferUploadFile(
       formFile,
       subPath,
       []
     );
+    // 如果转移文件出错，则返回错误信息
     if (err) {
       return Resp.errMsg(err);
     }
 
+    // 清理请求中的文件
     await this.c.cleanupRequestFiles();
+    // 返回上传成功的信息
     return Resp.okData({
       url: `//${this.c.host}${uploadFilePath}`,
       filePath: uploadFilePath,

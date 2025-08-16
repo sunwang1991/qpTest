@@ -17,6 +17,7 @@ export declare class RoomRepository {
     selectRooms(rooms: Array<number>): Promise<RoomModel[]>;
     /**新增房间 */
     insertRoom(roomData: Partial<RoomModel>): Promise<import("typeorm").InsertResult>;
+    deleteRooms(rooms: Array<number>): Promise<import("typeorm").DeleteResult>;
     /**新增房间用户关联 */
     insertRoomUser(roomId: number, userId: number): Promise<import("typeorm").InsertResult>;
     /**查找用户的进行中房间 */

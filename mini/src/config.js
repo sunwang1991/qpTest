@@ -10,7 +10,7 @@ export default {
     // 应用版本
     version: "1.0.0",
     // 应用logo
-    logo: "/static/logo.png",
+    logo: "/static/logo.png", 
     // 官方网站
     site_url: "http://www.xyvending.com/",
   },

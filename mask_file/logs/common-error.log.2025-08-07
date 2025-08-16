@@ -1,0 +1,64 @@
+2025-08-07 15:20:41.700 ERROR 15044 [-/::ffff:127.0.0.1/-/96ms GET /captcha-image] [Recovery][0] panic recovered: /captcha-image => QueryFailedError read ECONNRESET
+2025-08-07 15:20:41.827 ERROR 15044 [-/::ffff:127.0.0.1/-/223ms GET /captcha-image] 详细错误信息: {
+  stack: 'QueryFailedError: read ECONNRESET\n' +
+    '    at Query.onResult (E:\\兴元\\开门柜项目\\chess\\server\\src\\driver\\mysql\\MysqlQueryRunner.ts:246:33)\n' +
+    '    at PoolConnection._notifyError (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\mysql2\\lib\\base\\connection.js:223:21)\n' +
+    '    at PoolConnection._handleFatalError (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\mysql2\\lib\\base\\connection.js:178:10)\n' +
+    '    at PoolConnection._handleNetworkError (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\mysql2\\lib\\base\\connection.js:191:10)\n' +
+    '    at Socket.emit (node:events:517:28)\n' +
+    '    at emitErrorNT (node:internal/streams/destroy:151:8)\n' +
+    '    at emitErrorCloseNT (node:internal/streams/destroy:116:3)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  headers: {
+    host: '127.0.0.1:6275',
+    connection: 'close',
+    'x-app-code': 'MaskEl',
+    'sec-ch-ua-platform': '"Windows"',
+    'x-app-version': '2.0.3',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
+    'sec-ch-ua': '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"',
+    'sec-ch-ua-mobile': '?0',
+    accept: '*/*',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-dest': 'empty',
+    referer: 'http://localhost:6265/',
+    'accept-encoding': 'gzip, deflate, br, zstd',
+    'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+    cookie: 'locale=zh-cn; rememberMe=true; username=tanbin; password=iwbTUI900hTz3Ja6CuiwRWTVHXJbUh3bwsH3CZw37RajtOstH614TldegdMwyCkWDPWpOId2rH0e+5ko7u7/Ww=='
+  },
+  query: [Object: null prototype] {},
+  body: {}
+}
+2025-08-07 15:21:00.790 ERROR 15044 [-/::ffff:127.0.0.1/-/58ms GET /captcha-image] [Recovery][0] panic recovered: /captcha-image => QueryFailedError read ECONNRESET
+2025-08-07 15:21:00.792 ERROR 15044 [-/::ffff:127.0.0.1/-/60ms GET /captcha-image] 详细错误信息: {
+  stack: 'QueryFailedError: read ECONNRESET\n' +
+    '    at Query.onResult (E:\\兴元\\开门柜项目\\chess\\server\\src\\driver\\mysql\\MysqlQueryRunner.ts:246:33)\n' +
+    '    at PoolConnection._notifyError (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\mysql2\\lib\\base\\connection.js:223:21)\n' +
+    '    at PoolConnection._handleFatalError (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\mysql2\\lib\\base\\connection.js:178:10)\n' +
+    '    at PoolConnection._handleNetworkError (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\mysql2\\lib\\base\\connection.js:191:10)\n' +
+    '    at Socket.emit (node:events:517:28)\n' +
+    '    at emitErrorNT (node:internal/streams/destroy:151:8)\n' +
+    '    at emitErrorCloseNT (node:internal/streams/destroy:116:3)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  headers: {
+    host: '127.0.0.1:6275',
+    connection: 'close',
+    'x-app-code': 'MaskEl',
+    'sec-ch-ua-platform': '"Windows"',
+    'x-app-version': '2.0.3',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
+    'sec-ch-ua': '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"',
+    'sec-ch-ua-mobile': '?0',
+    accept: '*/*',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-dest': 'empty',
+    referer: 'http://localhost:6265/',
+    'accept-encoding': 'gzip, deflate, br, zstd',
+    'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+    cookie: 'locale=zh-cn; rememberMe=true; username=tanbin; password=iwbTUI900hTz3Ja6CuiwRWTVHXJbUh3bwsH3CZw37RajtOstH614TldegdMwyCkWDPWpOId2rH0e+5ko7u7/Ww=='
+  },
+  query: [Object: null prototype] {},
+  body: {}
+}

@@ -1,0 +1,259 @@
+2025-08-07 11:44:30.652 WARN 15044 当期服务环境运行配置 => local
+2025-08-07 14:31:14.944 INFO 15044 [-/::ffff:127.0.0.1/-/531ms POST /mini/room/game-records] 
+访问接口: /mini/room/game-records 
+总耗时: 531ms
+2025-08-07 14:31:46.729 INFO 15044 [-/::ffff:127.0.0.1/-/214ms POST /mini/room/game-records] 
+访问接口: /mini/room/game-records 
+总耗时: 214ms
+2025-08-07 15:20:41.698 ERROR 15044 [-/::ffff:127.0.0.1/-/94ms GET /captcha-image] [Recovery][0] panic recovered: /captcha-image => QueryFailedError read ECONNRESET
+2025-08-07 15:20:41.823 ERROR 15044 [-/::ffff:127.0.0.1/-/219ms GET /captcha-image] 详细错误信息: {
+  stack: 'QueryFailedError: read ECONNRESET\n' +
+    '    at Query.onResult (E:\\兴元\\开门柜项目\\chess\\server\\src\\driver\\mysql\\MysqlQueryRunner.ts:246:33)\n' +
+    '    at PoolConnection._notifyError (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\mysql2\\lib\\base\\connection.js:223:21)\n' +
+    '    at PoolConnection._handleFatalError (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\mysql2\\lib\\base\\connection.js:178:10)\n' +
+    '    at PoolConnection._handleNetworkError (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\mysql2\\lib\\base\\connection.js:191:10)\n' +
+    '    at Socket.emit (node:events:517:28)\n' +
+    '    at emitErrorNT (node:internal/streams/destroy:151:8)\n' +
+    '    at emitErrorCloseNT (node:internal/streams/destroy:116:3)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  headers: {
+    host: '127.0.0.1:6275',
+    connection: 'close',
+    'x-app-code': 'MaskEl',
+    'sec-ch-ua-platform': '"Windows"',
+    'x-app-version': '2.0.3',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
+    'sec-ch-ua': '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"',
+    'sec-ch-ua-mobile': '?0',
+    accept: '*/*',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-dest': 'empty',
+    referer: 'http://localhost:6265/',
+    'accept-encoding': 'gzip, deflate, br, zstd',
+    'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+    cookie: 'locale=zh-cn; rememberMe=true; username=tanbin; password=iwbTUI900hTz3Ja6CuiwRWTVHXJbUh3bwsH3CZw37RajtOstH614TldegdMwyCkWDPWpOId2rH0e+5ko7u7/Ww=='
+  },
+  query: [Object: null prototype] {},
+  body: {}
+}
+2025-08-07 15:21:00.789 ERROR 15044 [-/::ffff:127.0.0.1/-/57ms GET /captcha-image] [Recovery][0] panic recovered: /captcha-image => QueryFailedError read ECONNRESET
+2025-08-07 15:21:00.791 ERROR 15044 [-/::ffff:127.0.0.1/-/59ms GET /captcha-image] 详细错误信息: {
+  stack: 'QueryFailedError: read ECONNRESET\n' +
+    '    at Query.onResult (E:\\兴元\\开门柜项目\\chess\\server\\src\\driver\\mysql\\MysqlQueryRunner.ts:246:33)\n' +
+    '    at PoolConnection._notifyError (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\mysql2\\lib\\base\\connection.js:223:21)\n' +
+    '    at PoolConnection._handleFatalError (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\mysql2\\lib\\base\\connection.js:178:10)\n' +
+    '    at PoolConnection._handleNetworkError (E:\\兴元\\开门柜项目\\chess\\server\\node_modules\\mysql2\\lib\\base\\connection.js:191:10)\n' +
+    '    at Socket.emit (node:events:517:28)\n' +
+    '    at emitErrorNT (node:internal/streams/destroy:151:8)\n' +
+    '    at emitErrorCloseNT (node:internal/streams/destroy:116:3)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  headers: {
+    host: '127.0.0.1:6275',
+    connection: 'close',
+    'x-app-code': 'MaskEl',
+    'sec-ch-ua-platform': '"Windows"',
+    'x-app-version': '2.0.3',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
+    'sec-ch-ua': '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"',
+    'sec-ch-ua-mobile': '?0',
+    accept: '*/*',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-dest': 'empty',
+    referer: 'http://localhost:6265/',
+    'accept-encoding': 'gzip, deflate, br, zstd',
+    'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+    cookie: 'locale=zh-cn; rememberMe=true; username=tanbin; password=iwbTUI900hTz3Ja6CuiwRWTVHXJbUh3bwsH3CZw37RajtOstH614TldegdMwyCkWDPWpOId2rH0e+5ko7u7/Ww=='
+  },
+  query: [Object: null prototype] {},
+  body: {}
+}
+2025-08-07 15:21:59.357 WARN 28744 当期服务环境运行配置 => local
+2025-08-07 15:22:09.931 INFO 28744 [-/::ffff:127.0.0.1/-/154ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 154ms
+2025-08-07 15:22:14.465 INFO 28744 [-/::ffff:127.0.0.1/-/511ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 511ms
+2025-08-07 15:22:14.573 INFO 28744 [-/::ffff:127.0.0.1/-/9ms GET /me] 
+访问接口: /me 
+总耗时: 9ms
+2025-08-07 15:22:14.584 INFO 28744 [-/::ffff:127.0.0.1/-/40ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 40ms
+2025-08-07 15:22:14.657 INFO 28744 [-/::ffff:127.0.0.1/-/64ms GET /router] 
+访问接口: /router 
+总耗时: 64ms
+2025-08-07 15:22:41.994 INFO 28744 [-/::ffff:127.0.0.1/-/50ms POST /auth/logout] 
+访问接口: /auth/logout 
+总耗时: 50ms
+2025-08-07 15:22:42.516 INFO 28744 [-/::ffff:127.0.0.1/-/18ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 18ms
+2025-08-07 15:22:45.104 INFO 28744 [-/::ffff:127.0.0.1/-/24ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 24ms
+2025-08-07 15:23:26.112 INFO 28744 [-/::ffff:127.0.0.1/-/419ms POST /auth/register] 
+访问接口: /auth/register 
+总耗时: 419ms
+2025-08-07 15:23:26.793 INFO 28744 [-/::ffff:127.0.0.1/-/112ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 112ms
+2025-08-07 15:23:32.897 INFO 28744 [-/::ffff:127.0.0.1/-/26ms POST /auth/register] 
+访问接口: /auth/register 
+总耗时: 26ms
+2025-08-07 15:23:33.349 INFO 28744 [-/::ffff:127.0.0.1/-/15ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 15ms
+2025-08-07 15:23:35.627 INFO 28744 [-/::ffff:127.0.0.1/-/69ms POST /auth/register] 
+访问接口: /auth/register 
+总耗时: 69ms
+2025-08-07 15:23:36.237 INFO 28744 [-/::ffff:127.0.0.1/-/54ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 54ms
+2025-08-07 15:23:55.575 INFO 28744 [-/::ffff:127.0.0.1/-/61ms POST /auth/register] 
+访问接口: /auth/register 
+总耗时: 61ms
+2025-08-07 15:23:55.605 INFO 28744 [-/::ffff:127.0.0.1/-/6ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 6ms
+2025-08-07 15:25:21.816 WARN 13156 当期服务环境运行配置 => local
+2025-08-07 15:25:23.149 INFO 13156 [-/::ffff:127.0.0.1/-/57ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 57ms
+2025-08-07 15:25:35.662 INFO 13156 [-/::ffff:127.0.0.1/-/10298ms POST /auth/register] 
+访问接口: /auth/register 
+总耗时: 10298ms
+2025-08-07 15:25:35.698 INFO 13156 [-/::ffff:127.0.0.1/-/104ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 104ms
+2025-08-07 15:26:07.543 INFO 13156 [-/::ffff:127.0.0.1/-/27146ms POST /auth/register] 
+访问接口: /auth/register 
+总耗时: 27146ms
+2025-08-07 15:26:09.396 INFO 13156 [-/::ffff:127.0.0.1/-/1896ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 1896ms
+2025-08-07 15:26:09.422 INFO 13156 [-/::ffff:127.0.0.1/-/1900ms POST /auth/register] 
+访问接口: /auth/register 
+总耗时: 1900ms
+2025-08-07 15:26:09.483 INFO 13156 [-/::ffff:127.0.0.1/-/37ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 37ms
+2025-08-07 15:29:14.851 INFO 13156 [-/::ffff:127.0.0.1/-/182156ms POST /auth/register] 
+访问接口: /auth/register 
+总耗时: 182156ms
+2025-08-07 15:29:15.037 INFO 13156 [-/::ffff:127.0.0.1/-/128ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 128ms
+2025-08-07 15:29:15.057 INFO 13156 [-/::ffff:127.0.0.1/-/123ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 123ms
+2025-08-07 15:29:15.060 INFO 13156 [-/::ffff:127.0.0.1/-/97ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 96ms
+2025-08-07 15:29:18.527 INFO 13156 [-/::ffff:127.0.0.1/-/440ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 439ms
+2025-08-07 15:29:18.671 INFO 13156 [-/::ffff:127.0.0.1/-/21ms GET /me] 
+访问接口: /me 
+总耗时: 21ms
+2025-08-07 15:29:18.715 INFO 13156 [-/::ffff:127.0.0.1/-/88ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 88ms
+2025-08-07 15:29:18.795 INFO 13156 [-/::ffff:127.0.0.1/-/72ms GET /router] 
+访问接口: /router 
+总耗时: 72ms
+2025-08-07 15:29:31.212 INFO 13156 [-/::ffff:127.0.0.1/-/186ms GET /system/dict/data/type/sys_normal_disable] 
+访问接口: /system/dict/data/type/sys_normal_disable 
+总耗时: 186ms
+2025-08-07 15:29:31.289 INFO 13156 [-/::ffff:127.0.0.1/-/250ms GET /system/dept/tree] 
+访问接口: /system/dept/tree 
+总耗时: 250ms
+2025-08-07 15:29:31.301 INFO 13156 [-/::ffff:127.0.0.1/-/267ms GET /system/dict/data/type/sys_user_sex] 
+访问接口: /system/dict/data/type/sys_user_sex 
+总耗时: 267ms
+2025-08-07 15:29:31.558 INFO 13156 [-/::ffff:127.0.0.1/-/512ms GET /system/user/list?pageNum=1&pageSize=20&deptId=100] 
+访问接口: /system/user/list 
+总耗时: 512ms
+2025-08-07 15:29:33.590 INFO 13156 [-/::ffff:127.0.0.1/-/81ms GET /system/dict/data/type/sys_yes_no] 
+访问接口: /system/dict/data/type/sys_yes_no 
+总耗时: 81ms
+2025-08-07 15:29:33.614 INFO 13156 [-/::ffff:127.0.0.1/-/99ms GET /system/config/list?pageNum=1&pageSize=20] 
+访问接口: /system/config/list 
+总耗时: 99ms
+2025-08-07 15:29:42.278 INFO 13156 [-/::ffff:127.0.0.1/-/113ms GET /system/config/1] 
+访问接口: /system/config/1 
+总耗时: 113ms
+2025-08-07 15:30:01.840 INFO 13156 [-/::ffff:127.0.0.1/-/52ms GET /system/config/4] 
+访问接口: /system/config/4 
+总耗时: 52ms
+2025-08-07 15:30:19.468 INFO 13156 [-/::ffff:127.0.0.1/-/249ms PUT /system/config] 
+访问接口: /system/config 
+总耗时: 249ms
+2025-08-07 15:30:19.559 INFO 13156 [-/::ffff:127.0.0.1/-/60ms GET /system/config/list?pageNum=1&pageSize=20] 
+访问接口: /system/config/list 
+总耗时: 60ms
+2025-08-07 15:30:35.251 INFO 13156 [-/::ffff:127.0.0.1/-/76ms PUT /system/config/refresh] 
+访问接口: /system/config/refresh 
+总耗时: 76ms
+2025-08-07 15:30:39.530 INFO 13156 [-/::ffff:127.0.0.1/-/73ms POST /auth/logout] 
+访问接口: /auth/logout 
+总耗时: 73ms
+2025-08-07 15:30:40.668 INFO 13156 [-/::ffff:127.0.0.1/-/31ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 31ms
+2025-08-07 15:35:31.657 INFO 13156 [-/::ffff:127.0.0.1/-/38ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 38ms
+2025-08-07 15:35:53.854 INFO 13156 [-/::ffff:127.0.0.1/-/6995ms POST /auth/register] 
+访问接口: /auth/register 
+总耗时: 6995ms
+2025-08-07 15:35:53.963 INFO 13156 [-/::ffff:127.0.0.1/-/42ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 42ms
+2025-08-07 15:35:56.196 INFO 13156 [-/::ffff:127.0.0.1/-/29ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 29ms
+2025-08-07 15:36:07.956 INFO 13156 [-/::ffff:127.0.0.1/-/441ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 441ms
+2025-08-07 15:36:08.014 INFO 13156 [-/::ffff:127.0.0.1/-/43ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 43ms
+2025-08-07 15:36:08.072 INFO 13156 [-/::ffff:127.0.0.1/-/84ms GET /me] 
+访问接口: /me 
+总耗时: 84ms
+2025-08-07 15:36:08.131 INFO 13156 [-/::ffff:127.0.0.1/-/42ms GET /router] 
+访问接口: /router 
+总耗时: 41ms
+2025-08-07 15:36:15.613 INFO 13156 [-/::ffff:127.0.0.1/-/107ms POST /auth/logout] 
+访问接口: /auth/logout 
+总耗时: 107ms
+2025-08-07 15:36:16.718 INFO 13156 [-/::ffff:127.0.0.1/-/32ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 31ms
+2025-08-07 15:36:19.546 INFO 13156 [-/::ffff:127.0.0.1/-/327ms POST /auth/login] 
+访问接口: /auth/login 
+总耗时: 327ms
+2025-08-07 15:36:19.586 INFO 13156 [-/::ffff:127.0.0.1/-/14ms GET /me] 
+访问接口: /me 
+总耗时: 14ms
+2025-08-07 15:36:19.600 INFO 13156 [-/::ffff:127.0.0.1/-/43ms GET /captcha-image] 
+访问接口: /captcha-image 
+总耗时: 43ms
+2025-08-07 15:36:19.649 INFO 13156 [-/::ffff:127.0.0.1/-/44ms GET /router] 
+访问接口: /router 
+总耗时: 44ms
+2025-08-07 15:36:25.600 INFO 13156 [-/::ffff:127.0.0.1/-/120ms GET /system/dict/data/type/sys_normal_disable] 
+访问接口: /system/dict/data/type/sys_normal_disable 
+总耗时: 120ms
+2025-08-07 15:36:25.601 INFO 13156 [-/::ffff:127.0.0.1/-/106ms GET /system/dict/data/type/sys_user_sex] 
+访问接口: /system/dict/data/type/sys_user_sex 
+总耗时: 106ms
+2025-08-07 15:36:25.634 INFO 13156 [-/::ffff:127.0.0.1/-/131ms GET /system/dept/tree] 
+访问接口: /system/dept/tree 
+总耗时: 131ms
+2025-08-07 15:36:25.887 INFO 13156 [-/::ffff:127.0.0.1/-/399ms GET /system/user/list?pageNum=1&pageSize=20&deptId=100] 
+访问接口: /system/user/list 
+总耗时: 399ms

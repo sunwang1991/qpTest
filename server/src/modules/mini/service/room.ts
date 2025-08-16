@@ -109,8 +109,25 @@ export class RoomService {
       throw new Error('房间已经结束');
     }
 
+    //查询房间内所有用户,如果房间只有一个用户,则直接结束房间,并不做数据保留
+    const roomUsers = await this.roomRepository.selectUsersByRoomId(roomId);
+
+    if (roomUsers.length === 1) {
+      return await this.delRooms([roomId]);
+    }
+
     // 更新房间状态为已结算
     const result = await this.roomRepository.updateRoomStatus(roomId, '2');
+    return result.affected > 0;
+  }
+
+  /**
+   * 删除房间
+   * @param roomIds 房间ID列表
+   * @returns 是否成功
+   * */
+  async delRooms(roomIds: number[]): Promise<boolean> {
+    const result = await this.roomRepository.deleteRooms(roomIds);
     return result.affected > 0;
   }
 

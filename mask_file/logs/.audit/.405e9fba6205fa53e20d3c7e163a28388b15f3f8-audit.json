@@ -6,44 +6,24 @@
   "auditLog": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\.audit\\.405e9fba6205fa53e20d3c7e163a28388b15f3f8-audit.json",
   "files": [
     {
-      "date": 1750812781929,
-      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-06-25",
-      "hash": "f72bdfbb6a0abff57133233b4b4182fa"
+      "date": 1754274689388,
+      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-08-04",
+      "hash": "848db3a0cf0753e2a526f272a1dd9dfe"
     },
     {
-      "date": 1750899736125,
-      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-06-26",
-      "hash": "daf3abf247bd2e70a02e6e533de56505"
+      "date": 1754462854710,
+      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-08-06",
+      "hash": "f40418a9cf4f92db7a4c24a9bf60f70b"
     },
     {
-      "date": 1750985126247,
-      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-06-27",
-      "hash": "5300510f4236f3506492e79a1d705571"
+      "date": 1754538270090,
+      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-08-07",
+      "hash": "0ea3368196ec9e5ab25641b718892d01"
     },
     {
-      "date": 1751095393468,
-      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-06-28",
-      "hash": "13aac40bbf0909f4c4f88c3c6d12c4eb"
-    },
-    {
-      "date": 1751156695664,
-      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-06-29",
-      "hash": "01bbf4f165096a6a89d0cc2570c4d228"
-    },
-    {
-      "date": 1751245088336,
-      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-06-30",
-      "hash": "9b48d5c06ef08c7e079297fcb67598f2"
-    },
-    {
-      "date": 1751343960732,
-      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-07-01",
-      "hash": "c0f335ca1d5def7620a3dbab687da0cd"
-    },
-    {
-      "date": 1751410915010,
-      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-07-02",
-      "hash": "e3b8ddc48011e05cc846319082a7fcf2"
+      "date": 1754615186166,
+      "name": "E:\\兴元\\开门柜项目\\chess\\mask_file\\logs\\midway-bull.log.2025-08-08",
+      "hash": "e1e357d2bd8fa5246d6c895c1184e8a9"
     }
   ],
   "hashType": "md5"
