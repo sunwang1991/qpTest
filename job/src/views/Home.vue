@@ -537,10 +537,13 @@ const sendMessage = () => {
 </script>
 
 <style scoped>
+.home {
+  padding-top: 70px; /* 为固定导航栏留出空间 */
+}
+
 /* Hero Section */
 .hero-section {
-  background: url("../assets/images/hero-bg.jpg") no-repeat left top;
-  background-size: 100% auto;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   min-height: 100vh;
   display: flex;
