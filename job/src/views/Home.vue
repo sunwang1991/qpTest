@@ -5,42 +5,14 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-text">
-            <h1 class="hero-title">
-              你好，我是 <span class="highlight">孙旺</span>
-            </h1>
-            <h2 class="hero-subtitle">资深前端开发工程师</h2>
+            <div class="hero-title">前端开发工程师</div>
             <p class="hero-description">
-              8年前端开发经验，专注于Vue生态系统和现代Web技术。
-              擅长从项目架构到性能优化的全栈前端解决方案。
+              8年前端开发经验|专注于构建高性能、可扩展的 Web 应用
             </p>
-            <div class="hero-tags">
-              <el-tag size="large" type="primary">Vue3</el-tag>
-              <el-tag size="large" type="success">React</el-tag>
-              <el-tag size="large" type="warning">UniApp</el-tag>
-              <el-tag size="large" type="info">Node.js</el-tag>
-            </div>
+
             <div class="hero-actions">
-              <el-button
-                type="primary"
-                size="large"
-                @click="scrollToSection('projects')">
-                <el-icon><View /></el-icon>
-                查看项目
-              </el-button>
-              <el-button size="large" @click="scrollToSection('contact')">
-                <el-icon><ChatDotRound /></el-icon>
-                联系我
-              </el-button>
-            </div>
-          </div>
-          <div class="hero-avatar">
-            <div class="avatar-container">
-              <el-avatar :size="200" class="main-avatar">
-                <el-icon size="80"><User /></el-icon>
-              </el-avatar>
-              <div class="avatar-decoration">
-                <img src="../assets/head.jpg" alt="" srcset="" />
-              </div>
+              <button @click="scrollToSection('projects')">查看项目</button>
+              <button @click="scrollToSection('contact')">联系我</button>
             </div>
           </div>
         </div>
@@ -73,7 +45,7 @@
               <p>专注于应用性能提升</p>
             </div>
             <div class="info-card">
-              <el-icon size="40" color="#f56c6c"><Rocket /></el-icon>
+              <el-icon size="40" color="#f56c6c"><Pear /></el-icon>
               <h3>项目交付</h3>
               <p>高质量的项目完成能力</p>
             </div>
@@ -125,21 +97,18 @@
               <div class="skill-item">
                 <div class="skill-header">
                   <span>Vue.js (2/3)</span>
-                  <span>95%</span>
                 </div>
                 <el-progress :percentage="95" color="#4fc08d" />
               </div>
               <div class="skill-item">
                 <div class="skill-header">
                   <span>React</span>
-                  <span>80%</span>
                 </div>
                 <el-progress :percentage="80" color="#61dafb" />
               </div>
               <div class="skill-item">
                 <div class="skill-header">
                   <span>UniApp</span>
-                  <span>90%</span>
                 </div>
                 <el-progress :percentage="90" color="#2b9939" />
               </div>
@@ -152,21 +121,18 @@
               <div class="skill-item">
                 <div class="skill-header">
                   <span>Vite</span>
-                  <span>90%</span>
                 </div>
                 <el-progress :percentage="90" color="#646cff" />
               </div>
               <div class="skill-item">
                 <div class="skill-header">
                   <span>Webpack</span>
-                  <span>85%</span>
                 </div>
                 <el-progress :percentage="85" color="#8dd6f9" />
               </div>
               <div class="skill-item">
                 <div class="skill-header">
                   <span>Node.js</span>
-                  <span>80%</span>
                 </div>
                 <el-progress :percentage="80" color="#68a063" />
               </div>
@@ -179,21 +145,18 @@
               <div class="skill-item">
                 <div class="skill-header">
                   <span>JavaScript/ES6+</span>
-                  <span>95%</span>
                 </div>
                 <el-progress :percentage="95" color="#f7df1e" />
               </div>
               <div class="skill-item">
                 <div class="skill-header">
                   <span>HTML5/CSS3</span>
-                  <span>90%</span>
                 </div>
                 <el-progress :percentage="90" color="#e34f26" />
               </div>
               <div class="skill-item">
                 <div class="skill-header">
                   <span>TypeScript</span>
-                  <span>75%</span>
                 </div>
                 <el-progress :percentage="75" color="#3178c6" />
               </div>
@@ -309,63 +272,27 @@
         <p class="section-subtitle">期待与您的合作交流</p>
 
         <div class="contact-content">
-          <div class="contact-info">
-            <div class="contact-item">
-              <el-icon size="24" color="#409eff"><Phone /></el-icon>
-              <div>
-                <h4>电话</h4>
-                <p>19967171798</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <el-icon size="24" color="#67c23a"><Message /></el-icon>
-              <div>
-                <h4>邮箱</h4>
-                <p>741967556@qq.com</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <el-icon size="24" color="#e6a23c"><Location /></el-icon>
-              <div>
-                <h4>位置</h4>
-                <p>湖南省</p>
-              </div>
+          <div class="contact-item">
+            <el-icon size="24" color="#409eff"><Phone /></el-icon>
+            <div @click="phone">
+              <h4>电话</h4>
+              <p>19967171798</p>
             </div>
           </div>
-
-          <el-card class="contact-form">
-            <h3>发送消息</h3>
-            <el-form :model="contactForm" label-width="80px">
-              <el-form-item label="姓名">
-                <el-input
-                  v-model="contactForm.name"
-                  placeholder="请输入您的姓名" />
-              </el-form-item>
-              <el-form-item label="邮箱">
-                <el-input
-                  v-model="contactForm.email"
-                  placeholder="请输入您的邮箱" />
-              </el-form-item>
-              <el-form-item label="主题">
-                <el-input
-                  v-model="contactForm.subject"
-                  placeholder="请输入消息主题" />
-              </el-form-item>
-              <el-form-item label="消息">
-                <el-input
-                  v-model="contactForm.message"
-                  type="textarea"
-                  :rows="4"
-                  placeholder="请输入您的消息内容" />
-              </el-form-item>
-              <el-form-item>
-                <el-button type="primary" @click="sendMessage">
-                  <el-icon><Send /></el-icon>
-                  发送消息
-                </el-button>
-              </el-form-item>
-            </el-form>
-          </el-card>
+          <div class="contact-item" @click="email">
+            <el-icon size="24" color="#67c23a"><Message /></el-icon>
+            <div>
+              <h4>邮箱</h4>
+              <p>741967556@qq.com</p>
+            </div>
+          </div>
+          <div class="contact-item" @click="location">
+            <el-icon size="24" color="#e6a23c"><Location /></el-icon>
+            <div>
+              <h4>位置</h4>
+              <p>湖南省</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -376,16 +303,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from "vue";
-import { ElMessage } from "element-plus";
-
-// 联系表单
-const contactForm = reactive({
-  name: "",
-  email: "",
-  subject: "",
-  message: "",
-});
+import { ref } from "vue";
 
 // 项目数据
 const projects = ref([
@@ -401,7 +319,7 @@ const projects = ref([
       "Vue2项目成功迁移至Vite",
       "Node.js一键国际化功能",
     ],
-    icon: "Mobile",
+    icon: "Star",
     color: "#409eff",
   },
   {
@@ -518,32 +436,34 @@ const getTagType = (tech: string) => {
   return typeMap[tech] || "";
 };
 
-const sendMessage = () => {
-  if (!contactForm.name || !contactForm.email || !contactForm.message) {
-    ElMessage.warning("请填写完整信息");
-    return;
-  }
+/**
+ * 拨打电话
+ */
+const phone = () => {
+  window.location.href = "tel:19967171798";
+};
 
-  ElMessage.success("消息发送成功！我会尽快回复您。");
+const email = () => {
+  window.location.href = "mailto:741967556@qq.com";
+};
 
-  // 重置表单
-  Object.assign(contactForm, {
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+const location = () => {
+  //导航前往百度地图 坐标112.873299,28.231046
+  window.open(
+    "https://uri.amap.com/navigation?from=112.873299,28.231046,湖南省,湖南省,长沙市,湖南省,410000&to=112.873299,28.231046,湖南省,湖南省,长沙市,湖南省,410000&via=&mode=&policy=&src=&coordinate=gaode&callnative=0"
+  );
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .home {
-  padding-top: 70px; /* 为固定导航栏留出空间 */
+  padding-top: 70px;
 }
-
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background: url("../assets/images/hero-bg.jpg") no-repeat center center;
+  background-size: cover;
   color: white;
   min-height: 100vh;
   display: flex;
@@ -559,43 +479,36 @@ const sendMessage = () => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  opacity: 0.3;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.8;
 }
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1fr;
   align-items: center;
   position: relative;
   z-index: 1;
 }
 
 .hero-title {
-  font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-.highlight {
-  color: #ffd700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.hero-subtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1;
   margin-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-description {
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  max-width: 42rem;
   margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-tags {
@@ -609,6 +522,18 @@ const sendMessage = () => {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  button {
+    text-align: center;
+    padding-bottom: 0.75rem;
+    color: #fff;
+    padding-top: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+    background-color: rgb(37 99 235);
+    border: none;
+    user-select: none;
+  }
 }
 
 .avatar-container {
@@ -689,6 +614,9 @@ const sendMessage = () => {
 
 .detail-card {
   height: fit-content;
+  h3 {
+    padding-bottom: 20px;
+  }
 }
 
 .detail-item {
@@ -868,12 +796,6 @@ const sendMessage = () => {
   align-items: start;
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .contact-item {
   display: flex;
   align-items: center;
@@ -882,6 +804,8 @@ const sendMessage = () => {
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
 }
 
 .contact-item h4 {
@@ -901,14 +825,22 @@ const sendMessage = () => {
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+  .hero-section {
+    background-position: center top;
+    background-size: cover;
+    min-height: 90vh;
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 2rem;
   }
 
-  .hero-title {
-    font-size: 2.5rem;
+  .hero-tags,
+  .hero-actions {
+    display: flex;
+    justify-content: center;
   }
 
   .about-content {
@@ -937,6 +869,10 @@ const sendMessage = () => {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+  }
+
+  .hero-avatar {
+    margin-top: 20px;
   }
 }
 </style>
